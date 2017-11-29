@@ -1,0 +1,317 @@
+----- timezone:GMT
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: FATAL EXCEPTION: main
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: Process: com.android.dialer, PID: 18160
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=200, result=-1, data=Intent { (has extras) }} to activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3516)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3556)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2797)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1529)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:110)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:203)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6285)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1063)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:924)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: Caused by: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=200, result=-1, data=Intent { (has extras) }} to activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:4212)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3484)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	... 10 more
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilter.storeToPreferences(Unknown Source)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.saveFilter(Unknown Source)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at com.android.contacts.list.DefaultContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at com.android.dialer.DialtactsActivity.onContactListFilterChanged(Unknown Source)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.notifyContactListFilterChanged(Unknown Source)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.setContactListFilter(Unknown Source)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.setContactListFilter(Unknown Source)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at com.android.contacts.common.util.AccountFilterUtil.handleAccountFilterResult(Unknown Source)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at com.android.dialer.DialtactsActivity.onActivityResult(Unknown Source)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at android.app.Activity.dispatchActivityResult(Activity.java:6919)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:4208)
+05-05 13:00:44.639126 18160 18160 E AndroidRuntime: 	... 11 more
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: FATAL EXCEPTION: main
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: Process: com.android.dialer, PID: 18260
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=200, result=-1, data=Intent { (has extras) }} to activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3516)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3556)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2797)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1529)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:110)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:203)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6285)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1063)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:924)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: Caused by: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=200, result=-1, data=Intent { (has extras) }} to activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:4212)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3484)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	... 10 more
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilter.storeToPreferences(Unknown Source)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.saveFilter(Unknown Source)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at com.android.contacts.list.DefaultContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at com.android.dialer.DialtactsActivity.onContactListFilterChanged(Unknown Source)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.notifyContactListFilterChanged(Unknown Source)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.setContactListFilter(Unknown Source)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.setContactListFilter(Unknown Source)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at com.android.contacts.common.util.AccountFilterUtil.handleAccountFilterResult(Unknown Source)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at com.android.dialer.DialtactsActivity.onActivityResult(Unknown Source)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at android.app.Activity.dispatchActivityResult(Activity.java:6919)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:4208)
+05-05 13:01:04.196951 18260 18260 E AndroidRuntime: 	... 11 more
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: FATAL EXCEPTION: main
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: Process: com.android.dialer, PID: 18508
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=200, result=-1, data=Intent { (has extras) }} to activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3516)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3556)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2797)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1529)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:110)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:203)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6285)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1063)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:924)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: Caused by: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=200, result=-1, data=Intent { (has extras) }} to activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:4212)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3484)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	... 10 more
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilter.storeToPreferences(Unknown Source)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.saveFilter(Unknown Source)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at com.android.contacts.list.DefaultContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at com.android.dialer.DialtactsActivity.onContactListFilterChanged(Unknown Source)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.notifyContactListFilterChanged(Unknown Source)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.setContactListFilter(Unknown Source)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.setContactListFilter(Unknown Source)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at com.android.contacts.common.util.AccountFilterUtil.handleAccountFilterResult(Unknown Source)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at com.android.dialer.DialtactsActivity.onActivityResult(Unknown Source)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at android.app.Activity.dispatchActivityResult(Activity.java:6919)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:4208)
+05-05 13:02:03.889322 18508 18508 E AndroidRuntime: 	... 11 more
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: FATAL EXCEPTION: main
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: Process: com.android.dialer, PID: 18560
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=200, result=-1, data=Intent { (has extras) }} to activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3516)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3556)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2797)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1529)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:110)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:203)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6285)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1063)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:924)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: Caused by: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=200, result=-1, data=Intent { (has extras) }} to activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:4212)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3484)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	... 10 more
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilter.storeToPreferences(Unknown Source)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.saveFilter(Unknown Source)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at com.android.contacts.list.DefaultContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at com.android.dialer.DialtactsActivity.onContactListFilterChanged(Unknown Source)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.notifyContactListFilterChanged(Unknown Source)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.setContactListFilter(Unknown Source)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.setContactListFilter(Unknown Source)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at com.android.contacts.common.util.AccountFilterUtil.handleAccountFilterResult(Unknown Source)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at com.android.dialer.DialtactsActivity.onActivityResult(Unknown Source)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at android.app.Activity.dispatchActivityResult(Activity.java:6919)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:4208)
+05-05 13:02:14.386781 18560 18560 E AndroidRuntime: 	... 11 more
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: FATAL EXCEPTION: main
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: Process: com.android.dialer, PID: 18661
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=200, result=-1, data=Intent { (has extras) }} to activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3516)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3556)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2797)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1529)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:110)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:203)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6285)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1063)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:924)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: Caused by: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=200, result=-1, data=Intent { (has extras) }} to activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:4212)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3484)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	... 10 more
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilter.storeToPreferences(Unknown Source)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.saveFilter(Unknown Source)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at com.android.contacts.list.DefaultContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at com.android.dialer.DialtactsActivity.onContactListFilterChanged(Unknown Source)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.notifyContactListFilterChanged(Unknown Source)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.setContactListFilter(Unknown Source)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.setContactListFilter(Unknown Source)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at com.android.contacts.common.util.AccountFilterUtil.handleAccountFilterResult(Unknown Source)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at com.android.dialer.DialtactsActivity.onActivityResult(Unknown Source)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at android.app.Activity.dispatchActivityResult(Activity.java:6919)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:4208)
+05-05 13:02:23.736817 18661 18661 E AndroidRuntime: 	... 11 more
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: FATAL EXCEPTION: main
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: Process: com.android.dialer, PID: 19065
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=200, result=-1, data=Intent { (has extras) }} to activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3516)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3556)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2797)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1529)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:110)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:203)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6285)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1063)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:924)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: Caused by: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=200, result=-1, data=Intent { (has extras) }} to activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:4212)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3484)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	... 10 more
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilter.storeToPreferences(Unknown Source)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.saveFilter(Unknown Source)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at com.android.contacts.list.DefaultContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at com.android.dialer.DialtactsActivity.onContactListFilterChanged(Unknown Source)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.notifyContactListFilterChanged(Unknown Source)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.setContactListFilter(Unknown Source)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.setContactListFilter(Unknown Source)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at com.android.contacts.common.util.AccountFilterUtil.handleAccountFilterResult(Unknown Source)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at com.android.dialer.DialtactsActivity.onActivityResult(Unknown Source)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at android.app.Activity.dispatchActivityResult(Activity.java:6919)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:4208)
+05-05 13:04:15.403478 19065 19065 E AndroidRuntime: 	... 11 more
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: FATAL EXCEPTION: main
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: Process: com.android.dialer, PID: 19284
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=200, result=-1, data=Intent { (has extras) }} to activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3516)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3556)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2797)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1529)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:110)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:203)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6285)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1063)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:924)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: Caused by: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=200, result=-1, data=Intent { (has extras) }} to activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:4212)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3484)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	... 10 more
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilter.storeToPreferences(Unknown Source)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.saveFilter(Unknown Source)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at com.android.contacts.list.DefaultContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at com.android.dialer.DialtactsActivity.onContactListFilterChanged(Unknown Source)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.notifyContactListFilterChanged(Unknown Source)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.setContactListFilter(Unknown Source)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.setContactListFilter(Unknown Source)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at com.android.contacts.common.util.AccountFilterUtil.handleAccountFilterResult(Unknown Source)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at com.android.dialer.DialtactsActivity.onActivityResult(Unknown Source)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at android.app.Activity.dispatchActivityResult(Activity.java:6919)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:4208)
+05-05 13:06:42.786063 19284 19284 E AndroidRuntime: 	... 11 more
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: FATAL EXCEPTION: main
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: Process: com.android.dialer, PID: 19341
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=200, result=-1, data=Intent { (has extras) }} to activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3516)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3556)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2797)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1529)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:110)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:203)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6285)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1063)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:924)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: Caused by: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=200, result=-1, data=Intent { (has extras) }} to activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:4212)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3484)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	... 10 more
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilter.storeToPreferences(Unknown Source)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.saveFilter(Unknown Source)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at com.android.contacts.list.DefaultContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at com.android.dialer.DialtactsActivity.onContactListFilterChanged(Unknown Source)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.notifyContactListFilterChanged(Unknown Source)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.setContactListFilter(Unknown Source)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.setContactListFilter(Unknown Source)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at com.android.contacts.common.util.AccountFilterUtil.handleAccountFilterResult(Unknown Source)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at com.android.dialer.DialtactsActivity.onActivityResult(Unknown Source)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at android.app.Activity.dispatchActivityResult(Activity.java:6919)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:4208)
+05-05 13:06:49.476376 19341 19341 E AndroidRuntime: 	... 11 more
+05-05 13:07:01.988780 19417 19417 E AndroidRuntime: FATAL EXCEPTION: main
+05-05 13:07:01.988780 19417 19417 E AndroidRuntime: Process: com.android.dialer, PID: 19417
+05-05 13:07:01.988780 19417 19417 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'android.view.View android.app.Activity.getCurrentFocus()' on a null object reference
+05-05 13:07:01.988780 19417 19417 E AndroidRuntime: 	at com.android.dialer.list.AllContactsFragment.cancelSearch(Unknown Source)
+05-05 13:07:01.988780 19417 19417 E AndroidRuntime: 	at com.android.dialer.list.AllContactsFragment.onShow(Unknown Source)
+05-05 13:07:01.988780 19417 19417 E AndroidRuntime: 	at com.android.dialer.list.AllContactsFragment.onChange(Unknown Source)
+05-05 13:07:01.988780 19417 19417 E AndroidRuntime: 	at com.android.contacts.common.list.ContactEntryListFragment.setContactList(Unknown Source)
+05-05 13:07:01.988780 19417 19417 E AndroidRuntime: 	at com.android.dialer.list.ListsFragment.setContactList(Unknown Source)
+05-05 13:07:01.988780 19417 19417 E AndroidRuntime: 	at com.android.dialer.DialtactsActivity$MyAsyncTask.onPostExecute(Unknown Source)
+05-05 13:07:01.988780 19417 19417 E AndroidRuntime: 	at com.android.dialer.DialtactsActivity$MyAsyncTask.onPostExecute(Unknown Source)
+05-05 13:07:01.988780 19417 19417 E AndroidRuntime: 	at android.os.AsyncTask.finish(AsyncTask.java:660)
+05-05 13:07:01.988780 19417 19417 E AndroidRuntime: 	at android.os.AsyncTask.-wrap1(AsyncTask.java)
+05-05 13:07:01.988780 19417 19417 E AndroidRuntime: 	at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:677)
+05-05 13:07:01.988780 19417 19417 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:110)
+05-05 13:07:01.988780 19417 19417 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:203)
+05-05 13:07:01.988780 19417 19417 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6285)
+05-05 13:07:01.988780 19417 19417 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-05 13:07:01.988780 19417 19417 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1063)
+05-05 13:07:01.988780 19417 19417 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:924)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: FATAL EXCEPTION: main
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: Process: com.android.dialer, PID: 19519
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=200, result=-1, data=Intent { (has extras) }} to activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3516)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3556)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2797)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1529)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:110)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:203)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6285)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1063)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:924)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: Caused by: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=200, result=-1, data=Intent { (has extras) }} to activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:4212)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3484)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	... 10 more
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke interface method 'android.content.SharedPreferences$Editor android.content.SharedPreferences.edit()' on a null object reference
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilter.storeToPreferences(Unknown Source)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.saveFilter(Unknown Source)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at com.android.contacts.list.ContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at com.android.contacts.list.DefaultContactBrowseListFragment.setFilter(Unknown Source)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at com.android.dialer.DialtactsActivity.onContactListFilterChanged(Unknown Source)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.notifyContactListFilterChanged(Unknown Source)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.setContactListFilter(Unknown Source)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at com.android.contacts.common.list.ContactListFilterControllerImpl.setContactListFilter(Unknown Source)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at com.android.contacts.common.util.AccountFilterUtil.handleAccountFilterResult(Unknown Source)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at com.android.dialer.DialtactsActivity.onActivityResult(Unknown Source)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at android.app.Activity.dispatchActivityResult(Activity.java:6919)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:4208)
+05-05 13:07:13.335370 19519 19519 E AndroidRuntime: 	... 11 more

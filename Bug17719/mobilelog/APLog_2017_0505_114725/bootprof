@@ -1,0 +1,135 @@
+<< /proc/bootprof >>:
+----------------------------------------
+0	    BOOT PROF (unit:msec)
+----------------------------------------
+       611        : preloader
+      1984        : lk
+----------------------------------------
+        59.560153 : ON
+       102.716768 :    1-swapper/0       : initcall: of_init    15.831307ms
+       154.139845 :    1-swapper/0       : initcall: customize_machine    31.613769ms
+       186.367999 :    1-swapper/0       : initcall: param_sysfs_init    18.125000ms
+       202.925307 :    1-swapper/0       : initcall: pm_sysrq_init    16.495308ms
+       222.930538 :    1-swapper/0       : initcall: cmdq_init    15.365077ms
+       272.467384 :    1-swapper/0       : initcall: event_trace_init    40.340539ms
+       289.490461 :    1-swapper/0       : initcall: pmic_mt_init    15.749616ms
+       401.979307 :    1-swapper/0       : initcall: populate_rootfs   107.695385ms
+       470.230385 :    1-swapper/0       : initcall: musb_init    15.512923ms
+       502.425308 :    1-swapper/0       : probe: probe=mtkfb_probe drv=mtkfb(c105a53c)    28.881462ms
+       502.685231 :    1-swapper/0       : initcall: mtkfb_init    29.612616ms
+       611.366154 :    1-swapper/0       : probe: probe=platform_drv_probe drv=mtk-msdc(c1084d48)    46.902384ms
+       661.671385 :    1-swapper/0       : probe: probe=platform_drv_probe drv=mtk-msdc(c1084d48)    50.121923ms
+       662.571770 :    1-swapper/0       : initcall: mt_msdc_init    98.399462ms
+       703.922385 :    1-swapper/0       : probe: probe=platform_drv_probe drv=soc-audio(c108c24c)    16.761076ms
+       704.026154 :    1-swapper/0       : initcall: mt_soc_snd_init    17.084693ms
+      1331.546002 :    1-swapper/0       : probe: probe=i2c_device_probe drv=ltr579(c104b748)   605.879617ms
+      1331.989617 :    1-swapper/0       : initcall: alsps_init   606.527694ms
+      1356.191925 :    1-swapper/0       : probe: probe=i2c_device_probe drv=MC3XXX(c104ba48)    23.841539ms
+      1356.583617 :    1-swapper/0       : initcall: acc_init    24.496385ms
+      1541.626772 :  132-kworker/u8:4    : probe: probe=i2c_device_probe drv=gt1x(c1071638)   177.801154ms
+      1542.502387 :  132-kworker/u8:4    : probe: probe=platform_drv_probe drv=mtk-tpd(c1070a0c)   179.291078ms
+      1546.840387 :    1-swapper/0       : initcall: battery_init   183.590155ms
+      1548.421618 :    1-swapper/0       : Kernel_init_done
+      1927.961234 :    1-init            : INIT:early-init
+      2611.961390 :    1-init            : INIT:late-init
+      2612.109467 :    1-init            : INIT:Mount_START
+      5336.146088 :    1-init            : INIT:Mount_END
+      6416.518553 :    1-init            : INIT:post-fs
+      7235.660093 :    1-init            : INIT:post-fs-data
+      7282.486862 :    1-init            : post-fs-data: on modem start
+      7536.912017 :    1-init            : INIT:boot
+      7827.639479 :  213-wmt_loader      : probe: probe=platform_drv_probe drv=fm(c1064974)   107.929616ms
+      9783.326330 :  223-surfaceflinger  : BOOT_Animation:START
+     13270.511030 :  258-main            : Zygote:Preload Start
+     16144.506807 :  258-main            : Zygote:Preload 4161 classes in 2627ms
+     16884.483501 :  258-main            : Zygote:Preload 114 obtain resources in 387ms
+     16895.143424 :  258-main            : Zygote:Preload 41 resources in 10ms
+     17331.754656 :  258-main            : Zygote:Preload End
+     17540.458733 :  979-system_server   : Android:SysServerInit_START
+     18347.978119 :  979-system_server   : Android:PackageManagerService_Start
+     19216.500122 :  979-system_server   : Android:PMS_scan_START
+     19248.044429 :  979-system_server   : Android:PMS_scan_data:/vendor/overlay
+     19283.362660 :  979-system_server   : Android:PMS_scan_data:/system/framework
+     19344.472506 :  979-system_server   : Android:PMS_scan_data:/vendor/framework
+     19363.140507 :  979-system_server   : Android:PMS_scan_data:/system/priv-app
+     20994.863203 :  979-system_server   : Android:PMS_scan_data:/system/app
+     22912.653130 :  979-system_server   : Android:PMS_scan_data:/vendor/priv-app
+     22972.902977 :  979-system_server   : Android:PMS_scan_data:/system/vendor/app
+     23340.867670 :  979-system_server   : Android:PMS_scan_data:/vendor/operator/app
+     24934.773597 :  979-system_server   : Android:PMS_scan_data:/vendor/plugin
+     24954.314981 :  979-system_server   : Android:PMS_scan_data:/data/app
+     25693.365983 :  979-system_server   : Android:PMS_scan_END
+     25745.215752 :  979-system_server   : PMS:reconcileAppsDataLI
+     27144.409756 :  979-system_server   : PMS:performDexOpt:com.google.android.ext.services
+     27147.965679 :  979-system_server   : PMS:performDexOpt:com.android.providers.telephony
+     27153.330371 :  979-system_server   : PMS:performDexOpt:com.mediatek.fwk.plugin
+     27157.609987 :  979-system_server   : PMS:performDexOpt:com.google.android.ext.shared
+     27160.913987 :  979-system_server   : PMS:performDexOpt:com.android.mms.service
+     27165.714217 :  979-system_server   : PMS:performDexOpt:com.android.providers.downloads
+     27170.853679 :  979-system_server   : PMS:performDexOpt:com.android.defcontainer
+     27174.373064 :  979-system_server   : PMS:performDexOpt:com.lovelyfont.defcontainer
+     27178.935064 :  979-system_server   : PMS:performDexOpt:com.android.providers.settings
+     27184.916602 :  979-system_server   : PMS:performDexOpt:com.android.inputdevices
+     27188.460217 :  979-system_server   : PMS:performDexOpt:com.android.server.telecom
+     27194.657294 :  979-system_server   : PMS:performDexOpt:com.android.dialer
+     27204.501833 :  979-system_server   : PMS:performDexOpt:com.google.android.packageinstaller
+     27211.165141 :  979-system_server   : PMS:performDexOpt:com.android.proxyhandler
+     27214.597679 :  979-system_server   : PMS:performDexOpt:com.android.settings
+     27220.668602 :  979-system_server   : PMS:performDexOpt:com.android.phone
+     27228.041679 :  979-system_server   : PMS:performDexOpt:com.android.shell
+     27234.769295 :  979-system_server   : PMS:performDexOpt:com.android.location.fused
+     27238.829987 :  979-system_server   : PMS:performDexOpt:com.android.systemui
+     27249.075756 :  979-system_server   : PMS:performDexOpt:com.mediatek.mtklogger
+     27256.315295 :  979-system_server   : PMS:performDexOpt:com.google.android.inputmethod.latin
+     27266.891602 :  979-system_server   : Android:PMS_READY
+     28100.072604 :  979-system_server   : PMS:performDexOpt:com.google.android.ext.services
+     28365.812605 :  979-system_server   : PMS:performDexOpt:com.android.providers.telephony
+     28416.857913 :  979-system_server   : PMS:performDexOpt:com.mediatek.fwk.plugin
+     28419.459143 :  979-system_server   : PMS:performDexOpt:com.google.android.ext.shared
+     28421.533067 :  979-system_server   : PMS:performDexOpt:com.android.mms.service
+     28423.305143 :  979-system_server   : PMS:performDexOpt:com.android.providers.downloads
+     28425.172528 :  979-system_server   : PMS:performDexOpt:com.android.defcontainer
+     28426.770374 :  979-system_server   : PMS:performDexOpt:com.lovelyfont.defcontainer
+     28428.283220 :  979-system_server   : PMS:performDexOpt:com.android.providers.settings
+     28430.430144 :  979-system_server   : PMS:performDexOpt:com.android.inputdevices
+     28432.768836 :  979-system_server   : PMS:performDexOpt:com.android.server.telecom
+     28434.818374 :  979-system_server   : PMS:performDexOpt:com.android.dialer
+     28440.617836 :  979-system_server   : PMS:performDexOpt:com.google.android.packageinstaller
+     28443.455759 :  979-system_server   : PMS:performDexOpt:com.android.proxyhandler
+     28445.479067 :  979-system_server   : PMS:performDexOpt:com.android.settings
+     28448.109067 :  979-system_server   : PMS:performDexOpt:com.android.phone
+     28450.147605 :  979-system_server   : PMS:performDexOpt:com.android.shell
+     28452.119528 :  979-system_server   : PMS:performDexOpt:com.android.location.fused
+     28453.947528 :  979-system_server   : PMS:performDexOpt:com.android.systemui
+     28457.698759 :  979-system_server   : PMS:performDexOpt:com.mediatek.mtklogger
+     28459.776759 :  979-system_server   : PMS:performDexOpt:com.google.android.inputmethod.latin
+     28463.390759 :  979-system_server   : PMS:performDexOpt:com.google.android.googlequicksearchbox
+     28480.155297 :  979-system_server   : PMS:performDexOpt:com.mediatek.camera
+     28486.394144 :  979-system_server   : PMS:performDexOpt:org.getlantern.lantern
+     28492.595298 :  979-system_server   : PMS:performDexOpt:com.viber.voip
+     28509.318528 :  979-system_server   : PMS:performDexOpt:com.itel.autobootmanager
+     28514.842144 :  979-system_server   : PMS:performDexOpt:com.whatsapp
+     28524.461836 :  979-system_server   : PMS:performDexOpt:com.android.Ringtone
+     28529.361067 :  979-system_server   : PMS:performDexOpt:com.mediatek.engineermode
+     28535.153067 :  979-system_server   : PMS:performDexOpt:com.android.vending
+     28543.622144 :  979-system_server   : PMS:performDexOpt:com.transsion.powersaver
+     28549.284605 :  979-system_server   : PMS:performDexOpt:com.tencent.mm
+     28566.822298 :  979-system_server   : PMS:performDexOpt:com.android.mms
+     28575.543836 :  979-system_server   : PMS:performDexOpt:com.android.stk
+     28581.950298 :  979-system_server   : PMS:performDexOpt:com.android.launcher3
+     28591.157298 :  979-system_server   : PMS:performDexOpt:com.transsion.filemanager
+     28597.434990 :  979-system_server   : PMS:performDexOpt:com.android.calendar
+     28603.483990 :  979-system_server   : PMS:performDexOpt:com.transsion.phonemanager
+     28609.229990 :  979-system_server   : PMS:performDexOpt:com.android.gallery3d
+     28614.028298 :  979-system_server   : PMS:performDexOpt:com.transsion.applock
+     28619.172759 :  979-system_server   : PMS:performDexOpt:com.google.android.gms
+     28643.255529 :  979-system_server   : PMS:performDexOpt:tran.com.android.taplaota
+     28650.175067 :  979-system_server   : PMS:performDexOpt:com.facebook.katana
+     79334.405188 :  979-system_server   : PMS:performDexOpt:com.android.vpndialogs
+     79340.103957 :  979-system_server   : PMS:performDexOpt:com.android.deskclock
+     79347.523034 :  979-system_server   : PMS:performDexOpt:com.transsion.cleanmanager
+     79783.566497 :  425-Binder:223_2    : BOOT_Animation:END
+     79783.622189 : OFF
+----------------------------------------
+================ END of FILE ===============
+

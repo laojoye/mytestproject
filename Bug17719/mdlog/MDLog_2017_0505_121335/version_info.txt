@@ -1,0 +1,3 @@
+Android Version: alps-mp-n0.mp2-V1_rlk6580.we.i.n_P8
+Modem Version: MOLY.WR8.W1449.MD.WG.MP.V91.5.P2, 2017/04/07 15:15
+Project:RLK6580_WE_I_N_HSPA_HW(DEFAULT)

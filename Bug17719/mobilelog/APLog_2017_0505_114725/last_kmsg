@@ -1,0 +1,705 @@
+<< /proc/last_kmsg >>:
+ram console header, hw_status: 2, fiq step 0.
+Not Clear, old status is 2.
+,rgidle): [0] = (0,320), [1] = (0,172), [2] = (0,282), [3] = (0,53), 
+[    1.476762] -(0)[0:swapper/0][Power/swap]dpidle_block_cnt: [by_cpu] = 826, [by_clk] = 0, [by_tmr] = 0, [by_oth] = 0, [by_vtg] = 0, 
+[    1.476780] -(0)[0:swapper/0][Power/swap]dpidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 
+[    1.476832]  (2)[1:swapper/0][battery_probe] bat_thread_kthread Done
+[    1.476944]  (2)[1:swapper/0]charger_hv_detect_sw_workaround_init : done
+[    1.476987]  (2)[1:swapper/0]proc_create bat_proc_fops
+[    1.477652]  (2)[1:swapper/0]******** mt_batteryNotify_dts_probe!! ********
+[    1.477980]  (2)[1:swapper/0]******** mt_batteryNotify_probe!! ********
+[    1.478026]  (2)[1:swapper/0]proc_create battery_cmd_proc_fops
+[    1.478043]  (2)[1:swapper/0]proc_create current_cmd_proc_fops
+[    1.478058]  (2)[1:swapper/0]proc_create discharging_cmd_proc_fops
+[    1.478068]  (2)[1:swapper/0]******** mtk_battery_cmd!! ********
+[    1.478515]  (2)[1:swapper/0]****[battery_driver] Initialization : DONE !!
+[    1.478815]  (0)[1:swapper/0]lowmemorykiller: [LMK]total_low_ratio[2] - totalram_pages[244664] - totalhigh_pages[121088]
+[    1.478923]  (0)[1:swapper/0]va: disabling
+[    1.478936]  (0)[1:swapper/0][PMIC] regulator_disable fail (name=va use_count=0)
+[    1.478948]  (0)[1:swapper/0]va: couldn't disable: -1
+[    1.478969]  (0)[1:swapper/0]vcn33_bt: disabling
+[    1.478980]  (0)[1:swapper/0][PMIC] regulator_disable fail (name=vcn33_bt use_count=0)
+[    1.478991]  (0)[1:swapper/0]vcn33_bt: couldn't disable: -1
+[    1.479006]  (0)[1:swapper/0]vcn33_wifi: disabling
+[    1.479017]  (0)[1:swapper/0][PMIC] regulator_disable fail (name=vcn33_wifi use_count=0)
+[    1.479028]  (0)[1:swapper/0]vcn33_wifi: couldn't disable: -1
+[    1.479054]  (0)[1:swapper/0]vusb: disabling
+[    1.479065]  (0)[1:swapper/0][PMIC] regulator_disable fail (name=vusb use_count=0)
+[    1.479076]  (0)[1:swapper/0]vusb: couldn't disable: -1
+[    1.479113]  (0)[1:swapper/0]vm: disabling
+[    1.479124]  (0)[1:swapper/0][PMIC] regulator_disable fail (name=vm use_count=0)
+[    1.479135]  (0)[1:swapper/0]vm: couldn't disable: -1
+[    1.479157]  (0)[1:swapper/0]vio18: disabling
+[    1.479168]  (0)[1:swapper/0][PMIC] regulator_disable fail (name=vio18 use_count=0)
+[    1.479179]  (0)[1:swapper/0]vio18: couldn't disable: -1
+[    1.479209]  (0)[1:swapper/0]vcn_1v8: disabling
+[    1.479232]  (0)[1:swapper/0][PMIC] regulator_disable fail (name=vcn_1v8 use_count=0)
+[    1.479243]  (0)[1:swapper/0]vcn_1v8: couldn't disable: -1
+[    1.479283]  (0)[1:swapper/0]ALSA device list:
+[    1.479293]  (0)[1:swapper/0]  #0: mt-snd-card
+[    1.479992]  (0)[1:swapper/0]Freeing unused kernel memory: 444K (c0f00000 - c0f6f000)
+[    1.480083]  (0)[1:swapper/0]BOOTPROF:      1480.077695:Kernel_init_done
+[    1.483488]  (0)[1:init]init: init first stage started!
+[    1.489253]  (1)[131:kworker/u8:4][WDK] WDT start kicker done CPU_NR=4
+[    1.489338]  (1)[131:kworker/u8:4][cpu_ntf] <00>c07d158c (wk_cpu_callback)
+[    1.489359]  (1)[131:kworker/u8:4][WDK]init_wk done late_initcall cpus_kick_bit=0x7 -----
+[    1.508759] -(1)[112:kworker/u8:2][PTP] ptp_set_ptp_volt cur_temp = 37200
+[    1.533886] -(2)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[    1.533920]  (2)[143:bat_thread_kthr][BAT_thread]Cable out 
+[    1.546666]  (2)[143:bat_thread_kthr]AvgVbat=(4222,4222),AvgI=(0,0),VChr=66,AvgT=(28,28),SOC=(91,91),UI_SOC=0,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-216
+[    1.546707]  (2)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[    1.546724] -(2)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[    1.565377]  (1)[112:kworker/u8:2][sd]msdc1 Set<400K> src:<187690K> sclk:<397K> timing<0> mode:0 div:118
+[    1.566917]  (1)[112:kworker/u8:2][sd][msdc_ops_request_legacy] host->continuous_fail_request_count to zero, line:7149
+[    1.567226]  (1)[112:kworker/u8:2][sd][msdc_ops_request_legacy] host->continuous_fail_request_count to zero, line:7149
+[    1.567755]  (1)[112:kworker/u8:2][sd][msdc_ops_request_legacy] host->continuous_fail_request_count to zero, line:7149
+[    1.567771] [sd]msdc1 select card<0x59b40000>
+[    1.568068]  (1)[112:kworker/u8:2][sd][msdc_ops_request_legacy] host->continuous_fail_request_count to zero, line:7149
+[    1.568372]  (1)[112:kworker/u8:2][sd][msdc_ops_request_legacy] host->continuous_fail_request_count to zero, line:7149
+[    1.569015]  (1)[112:kworker/u8:2][sd][msdc_ops_request_legacy] host->continuous_fail_request_count to zero, line:7149
+[    1.569317]  (1)[112:kworker/u8:2][sd][msdc_ops_request_legacy] host->continuous_fail_request_count to zero, line:7149
+[    1.571061]  (1)[112:kworker/u8:2][sd][msdc_ops_request_legacy] host->continuous_fail_request_count to zero, line:7149
+[    1.573036]  (1)[112:kworker/u8:2][sd][msdc_ops_request_legacy] host->continuous_fail_request_count to zero, line:7149
+[    1.573353]  (1)[112:kworker/u8:2][sd][msdc_ops_request_legacy] host->continuous_fail_request_count to zero, line:7149
+[    1.573656]  (1)[112:kworker/u8:2][sd][msdc_ops_request_legacy] host->continuous_fail_request_count to zero, line:7149
+[    1.574711]  (1)[112:kworker/u8:2][sd][msdc_ops_request_legacy] host->continuous_fail_request_count to zero, line:7149
+[    1.574732]  (1)[112:kworker/u8:2][sd][SD1] hz=(208000kHz), change clock source form (2) to (7)
+[    1.574787]  (1)[112:kworker/u8:2][sd]msdc1 Set<208000K> src:<208000K> sclk:<208000K> timing<6> mode:1 div:0
+[    1.574812]  (1)[112:kworker/u8:2]mmc1: new ultra high speed SDR104 SDHC card at address 59b4
+[    1.575492]  (2)[112:kworker/u8:2]mmcblk1: mmc1:59b4 SD    14.7 GiB 
+[    1.576705] -(0)[1:init][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    1.577347] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    1.577435]  (2)[112:kworker/u8:2] mmcblk1: p1
+[    1.579314]  (0)[1:init]audit: type=1403 audit(1493878337.590:2): policy loaded auid=4294967295 ses=4294967295
+[    1.579883]  (0)[1:init]audit: type=1404 audit(1493878337.590:3): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295
+[    1.611595]  (1)[1:init]init: (Initializing SELinux enforcing took 0.13s.)
+[    1.619415]  (0)[1:init]init: init second stage started!
+[    1.632713]  (0)[1:init]init: init_dyfeature_area()
+[    1.633177]  (0)[1:init]init: set init value ok
+[    1.633446]  (0)[1:init]init: kernel cmdline: console=tty0
+[    1.633477]  (0)[1:init]init: kernel cmdline: console=ttyMT0,921600n1
+[    1.633502]  (0)[1:init]init: kernel cmdline: root=/dev/ram
+[    1.633527]  (0)[1:init]init: kernel cmdline: vmalloc=496M
+[    1.633573]  (0)[1:init]init: PropSet Error:[ro.boot.hardware:mt6580]  ro.* properties may NEVER be modified once set
+[    1.633597]  (0)[1:init]init: property_set("ro.boot.hardware", "mt6580") failed
+[    1.633619]  (0)[1:init]init: kernel cmdline: androidboot.hardware=mt6580
+[    1.633670]  (0)[1:init]init: kernel cmdline: androidboot.verifiedbootstate=green
+[    1.633698]  (0)[1:init]init: kernel cmdline: bootopt=64S3,32S1,32S1
+[    1.633723]  (0)[1:init]init: kernel cmdline: printk.disable_uart=1
+[    1.633748]  (0)[1:init]init: kernel cmdline: bootprof.pl_t=610
+[    1.633773]  (0)[1:init]init: kernel cmdline: bootprof.lk_t=2018
+[    1.633798]  (0)[1:init]init: kernel cmdline: boot_reason=2
+[    1.633839]  (0)[1:init]init: PropSet Error:[ro.boot.serialno:MVN79POZQ8TKPF75]  ro.* properties may NEVER be modified once set
+[    1.633862]  (0)[1:init]init: property_set("ro.boot.serialno", "MVN79POZQ8TKPF75") failed
+[    1.633884]  (0)[1:init]init: kernel cmdline: androidboot.serialno=MVN79POZQ8TKPF75
+[    1.633931]  (0)[1:init]init: kernel cmdline: androidboot.bootreason=rtc
+[    1.633958]  (0)[1:init]init: kernel cmdline: gpt=1
+[    1.641856]  (0)[1:init]init: Running restorecon...
+[    1.848252]  (0)[1:init]init: waitpid failed: No child processes
+[    1.852222]  (0)[1:init]init: (Loading properties from /default.prop took 0.00s.)
+[    1.853390]  (0)[1:init]init: /init.rc: 22: invalid keyword 'mknod'
+[    1.853958]  (0)[1:init]init: could not import file '/init.recovery.mt6580.rc' from '/init.rc': No such file or directory
+[    1.854002]  (0)[1:init]init: (Parsing /init.rc took 0.00s.)
+[    1.854223]  (0)[1:init]init: Starting service 'ueventd'...
+[    1.854946]  (0)[1:init]init: Starting service 'healthd'...
+[    1.855715]  (0)[1:init]init: Waiting for /dev/.coldboot_done...
+[    1.859239]  (2)[152:ueventd]ueventd: ueventd started!
+[    1.861830]  (0)[153:healthd]audit: type=1400 audit(1493878337.880:4): avc:  denied  { mknod } for  pid=153 comm="healthd" capability=27  scontext=u:r:healthd:s0 tcontext=u:r:healthd:s0 tclass=capability permissive=0
+[    1.861939]  (0)[153:healthd]audit: type=1400 audit(1493878337.880:5): avc:  denied  { mknod } for  pid=153 comm="healthd" capability=27  scontext=u:r:healthd:s0 tcontext=u:r:healthd:s0 tclass=capability permissive=0
+[    1.862018]  (0)[153:healthd]audit: type=1400 audit(1493878337.880:6): avc:  denied  { mknod } for  pid=153 comm="healthd" capability=27  scontext=u:r:healthd:s0 tcontext=u:r:healthd:s0 tclass=capability permissive=0
+[    2.132253]  (0)[94:hps_main]CPU2: shutdown
+[    2.133023]  (0)[94:hps_main][HPS] (0200)(3)action end(106)(105)(0)(1) (4)(4)(4)(4)(1) (212)(8)(0) (887)(8)(0) (0)(105)(8)(0)(105)
+[    2.388979]  (0)[153:healthd]healthd: Unknown battery status '3'
+[    2.389407]  (0)[153:healthd]healthd: battery l=91 v=4222 t=28.0 h=2 st=4 chg=
+[    2.389434]  (0)[153:healthd]healthd: battery l=91 v=4222 t=28.0 h=2 st=4 chg=
+[    2.389527]  (0)[153:healthd]healthd: send_already = 0
+[    2.389953]  (0)[153:healthd]healthd: Unknown battery status '3'
+[    2.390335]  (0)[153:healthd]healthd: battery l=91 v=4222 t=28.0 h=2 st=4 chg=
+[    2.390360]  (0)[153:healthd]healthd: battery l=91 v=4222 t=28.0 h=2 st=4 chg=
+[    2.390438]  (0)[153:healthd]healthd: send_already = 0
+[    2.390857]  (0)[153:healthd]healthd: Unknown battery status '3'
+[    2.391234]  (0)[153:healthd]healthd: battery l=91 v=4222 t=28.0 h=2 st=4 chg=
+[    2.391641]  (0)[153:healthd]healthd: battery l=91 v=4222 t=28.0 h=2 st=4 chg=
+[    2.391744]  (0)[153:healthd]healthd: send_already = 0
+[    2.392171]  (0)[153:healthd]healthd: Unknown battery status '3'
+[    2.392559]  (0)[153:healthd]healthd: battery l=91 v=4222 t=28.0 h=2 st=4 chg=
+[    2.392584]  (0)[153:healthd]healthd: battery l=91 v=4222 t=28.0 h=2 st=4 chg=
+[    2.392667]  (0)[153:healthd]healthd: send_already = 0
+[    2.471435]  (0)[55:kworker/0:1]get expdb info
+[    2.476751]  (0)[143:bat_thread_kthr][BAT_thread]Cable out 
+[    2.492875]  (0)[143:bat_thread_kthr]AvgVbat=(4222,4228),AvgI=(0,0),VChr=66,AvgT=(28,28),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-198
+[    2.492903]  (0)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[    2.492922] -(0)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[    2.523009]  (1)[152:ueventd]ueventd: Coldboot took 0.66s.
+[    2.523219]  (0)[1:init]init: Waiting for /dev/.coldboot_done took 0.67s.
+[    2.523311]  (0)[1:init]init: /dev/hw_random not found
+[    2.526496] init: insmod: open("/sec.ko") failed: No such file or directory
+[    2.527339]  (0)[1:init]init: /dev/hw_random not found
+[    2.527486]  (0)[1:init]BOOTPROF:      2527.478236:start mobicore (on fs)
+[    2.527659]  (0)[1:init]init: cannot find '/system/bin/mcDriverDaemon' (No such file or directory), disabling 'mobicore'
+[    2.527722]  (0)[1:init]BOOTPROF:      2527.715621:start mobicore end (on fs)
+[    2.527787]  (0)[1:init]init: cannot find '/sbin/fuelgauged_static' (No such file or directory), disabling 'fuelgauged'
+[    2.529549]  (0)[1:init]init: can not load properties (null) from /system/build.prop
+[    2.529597]  (0)[1:init]init: (Loading properties from /system/build.prop took 0.00s.)
+[    2.529662]  (0)[1:init]init: can not load properties (null) from /vendor/build.prop
+[    2.529693]  (0)[1:init]init: (Loading properties from /vendor/build.prop took 0.00s.)
+[    2.529734]  (0)[1:init]init: can not load properties ro.* from /factory/factory.prop
+[    2.529764]  (0)[1:init]init: (Loading properties from /factory/factory.prop took 0.00s.)
+[    2.532159]  (0)[1:init]init: service 'ueventd' still running, return directly
+[    2.532196]  (0)[1:init]init: service 'healthd' still running, return directly
+[    2.532235]  (0)[1:init]init: Starting service 'recovery'...
+[    2.543910]  (1)[156:recovery]EXT4-fs (mmcblk0p19): mounted filesystem with ordered data mode. Opts: noauto_da_alloc,discard
+[    3.510250] [sd][msdc_command_resp_polling]: msdc1 XXX CMD<17> MSDC_INT_RSPCRCERR Arg<0x00000800>
+[    3.510310]  (0)[151:mmcqd/1][sd]msdc1 -> XXX DAT block<1> Error<0> <- msdc_dump_trans_error() : L<6833> PID<mmcqd/1><0x97>
+[    3.510345] [sd]msdc1 TUNE_CMD: rsmpl<1> rdly<0> rrdly<0> cmdrtc<1> sfreq.<208000000>
+[    3.510380]  (0)[151:mmcqd/1][sd]msdc1 -> state<5> need cmd12 to stop <- msdc_status_verify_case1() : L<2798> PID<mmcqd/1><0x97>
+[    3.510872]  (0)[151:mmcqd/1][sd]msdc1 -> XXX DAT block<1> Error<-5> <- msdc_dump_trans_error() : L<6833> PID<mmcqd/1><0x97>
+[    3.511306] -(0)[0:swapper/0][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.511363]  (0)[151:mmcqd/1][sd][msdc_tune_async_request] host->continuous_fail_request_count to zero, line:7505
+[    3.511391]  (0)[151:mmcqd/1][sd]msdc1 -> CRC TUNE CMD Times(1) <- msdc_reset_crc_tune_counter() : L<1903> PID<mmcqd/1><0x97>
+[    3.511417]  (0)[151:mmcqd/1][sd]msdc1 -> CRC TUNE READ Times(1) <- msdc_reset_crc_tune_counter() : L<1908> PID<mmcqd/1><0x97>
+[    3.511926] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.512539] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.513155] -(1)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.513633] -(1)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.514264] -(0)[161:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.515032] -(0)[161:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.515567] -(0)[161:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.515905]  (1)[156:recovery]FAT-fs (mmcblk1p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[    3.517056] -(1)[161:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.518296] -(0)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.518933] -(1)[161:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.520196] -(0)[0:swapper/0][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.520961] -(0)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.542990] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.545934] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.549313] -(1)[161:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.555949] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.558298] -(1)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.563571] -(1)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.568279] -(1)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.572894] -(1)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.577706] -(1)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.582399] -(1)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.587286] -(1)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.591830] -(1)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.595238] -(0)[0:swapper/0][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.597549] -(0)[151:mmcqd/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.599902] -(0)[151:mmcqd/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.602213] -(1)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.604726] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.607001] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.609403] -(1)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.611898] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.614257] -(0)[161:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.620660] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.622968] -(1)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.625415] -(1)[151:mmcqd/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.627738] -(1)[151:mmcqd/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.630093] -(0)[0:swapper/0][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.632423] -(0)[0:swapper/0][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.634744] -(1)[151:mmcqd/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.637188] -(1)[151:mmcqd/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.639502] -(1)[151:mmcqd/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.642036] -(0)[0:swapper/0][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.644359] -(1)[151:mmcqd/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.646766] -(1)[151:mmcqd/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.649180] -(1)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.654147] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.656454] -(1)[131:kworker/u8:4][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.658960] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.661260] -(1)[151:mmcqd/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.663690] -(1)[151:mmcqd/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.666097] -(1)[151:mmcqd/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.668540] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.670854] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.673385] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.675705] -(0)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.678244] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.680587] -(1)[161:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.687483] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.689791] -(0)[0:swapper/0][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.692287] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.694706] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.697137] -(0)[0:swapper/0][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.699452] -(0)[151:mmcqd/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.702244] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.704491] -(1)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.706914] -(0)[151:mmcqd/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.709282] -(0)[151:mmcqd/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.712209] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.714662] -(0)[161:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.717128] -(0)[161:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    3.718932] -(1)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[    5.476793]  (0)[143:bat_thread_kthr][BAT_thread]Cable out 
+[    5.487607]  (0)[143:bat_thread_kthr]AvgVbat=(4222,4226),AvgI=(0,0),VChr=66,AvgT=(28,28),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-204
+[    5.487633]  (0)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[    5.487650] -(0)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[    6.477360] -(0)[0:swapper/0][Power/swap]CNT(soidle,rgidle): [0] = (0,2993), [1] = (0,2550), [2] = (0,444), [3] = (0,53), 
+[    6.477387] -(0)[0:swapper/0][Power/swap]soidle_block_cnt: [by_cpu] = 2994, [by_clk] = 0, [by_tmr] = 0, [by_oth] = 0, [by_vtg] = 0, 
+[    6.477405] -(0)[0:swapper/0][Power/swap]soidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 
+[   11.490615] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[   13.027626] -(1)[161:recovery]random: nonblocking pool is initialized
+[   15.476834]  (1)[143:bat_thread_kthr][BAT_thread]Cable out 
+[   15.493907]  (0)[143:bat_thread_kthr]AvgVbat=(4222,4226),AvgI=(0,0),VChr=66,AvgT=(28,28),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-210
+[   15.493936]  (0)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[   15.493953] -(0)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[   21.481341]  (0)[146:wdtk-0][WDK]: kick Ex WDT,RT[21481322896]
+[   21.491409] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[   25.476868]  (1)[143:bat_thread_kthr][BAT_thread]Cable out 
+[   25.493327]  (1)[143:bat_thread_kthr]AvgVbat=(4222,4224),AvgI=(0,0),VChr=66,AvgT=(28,28),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-210
+[   25.493355]  (1)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[   25.493373] -(1)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[   25.495176]  (1)[153:healthd]healthd: Unknown battery status '3'
+[   25.495709]  (1)[153:healthd]healthd: battery l=91 v=4222 t=28.0 h=2 st=4 chg=
+[   25.495735]  (1)[153:healthd]healthd: battery l=91 v=4222 t=28.0 h=2 st=4 chg=
+[   25.495835]  (1)[153:healthd]healthd: send_already = 0
+[   30.651364]  (1)[117:hang_detect][Hang_Detect] hang_detect disabled.
+[   31.511221] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[   31.511266] -(0)[0:swapper/0][Power/swap]CNT(dpidle,rgidle): [0] = (0,17602), [1] = (0,17209), [2] = (0,444), [3] = (0,53), 
+[   31.511283] -(0)[0:swapper/0][Power/swap]dpidle_block_cnt: [by_cpu] = 34484, [by_clk] = 0, [by_tmr] = 0, [by_oth] = 0, [by_vtg] = 0, 
+[   31.511300] -(0)[0:swapper/0][Power/swap]dpidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 
+[   32.571334]  (0)[139:read_poweroff_l]ram_console: open expdb partition error [-2]!
+[   35.476939]  (1)[143:bat_thread_kthr][BAT_thread]Cable out 
+[   35.493764]  (1)[143:bat_thread_kthr]AvgVbat=(4222,4214),AvgI=(0,0),VChr=66,AvgT=(28,28),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-245
+[   35.493793]  (1)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[   35.493811] -(1)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[   36.513029] -(0)[0:swapper/0][Power/swap]CNT(soidle,rgidle): [0] = (0,20477), [1] = (0,20138), [2] = (0,444), [3] = (0,53), 
+[   36.513057] -(0)[0:swapper/0][Power/swap]soidle_block_cnt: [by_cpu] = 17484, [by_clk] = 0, [by_tmr] = 0, [by_oth] = 0, [by_vtg] = 0, 
+[   36.513076] -(0)[0:swapper/0][Power/swap]soidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 
+[   41.491352]  (1)[147:wdtk-1][WDK]: kick Ex WDT,RT[41491338175]
+[   41.512201] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[   44.261383]  (0)[51:pmic_thread][PMIC] [PMIC_INT] addr[0x172]=0x0
+[   44.261412]  (0)[51:pmic_thread][PMIC] [PMIC_INT] addr[0x174]=0x10
+[   44.261423]  (0)[51:pmic_thread]mtk_rtc_common: rtc_tasklet_handler start
+[   44.261508]  (0)[51:pmic_thread]mtk_rtc_hal: pdn1 = 0x  80
+[   44.261518]  (0)[51:pmic_thread]mtk_rtc_hal: pdn1 = 0x  80
+[   44.262320]  (0)[51:pmic_thread]mtk_rtc_hal: pdn1 = 0x  80
+[   44.262367]  (0)[51:pmic_thread]mtk_rtc_hal_common: mon = 5, day = 4, hour = 23313
+[   44.262742]  (0)[51:pmic_thread]mtk_rtc_common: alarm time is up
+[   45.476971]  (0)[143:bat_thread_kthr][BAT_thread]Cable out 
+[   45.492097]  (0)[143:bat_thread_kthr]AvgVbat=(4222,4218),AvgI=(0,0),VChr=66,AvgT=(28,28),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-233
+[   45.492118]  (0)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[   45.492128] -(0)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[   49.769078] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[   51.545470] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[   55.477039]  (0)[143:bat_thread_kthr][BAT_thread]Cable out 
+[   55.491858]  (0)[143:bat_thread_kthr]AvgVbat=(4222,4230),AvgI=(0,0),VChr=66,AvgT=(28,28),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-181
+[   55.491887]  (0)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[   55.491905] -(0)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[   57.990541] -(0)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[   58.002862] -(1)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[   58.217212] -(1)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[   60.661363]  (0)[117:hang_detect][Hang_Detect] hang_detect disabled.
+[   61.501331]  (0)[146:wdtk-0][WDK]: kick Ex WDT,RT[61501317377]
+[   61.519135] -(0)[0:swapper/0][Power/swap]CNT(dpidle,rgidle): [0] = (0,35573), [1] = (0,34140), [2] = (0,444), [3] = (0,53), 
+[   61.519172] -(0)[0:swapper/0][Power/swap]dpidle_block_cnt: [by_cpu] = 34895, [by_clk] = 0, [by_tmr] = 0, [by_oth] = 0, [by_vtg] = 0, 
+[   61.519193] -(0)[0:swapper/0][Power/swap]dpidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 
+[   61.554775] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[   63.646974] -(0)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[   63.647017]  (1)[151:mmcqd/1][sd][msdc_ops_request_legacy] host->continuous_fail_request_count to zero, line:7149
+[   65.477112]  (1)[143:bat_thread_kthr][BAT_thread]Cable out 
+[   65.494179]  (0)[143:bat_thread_kthr]AvgVbat=(4222,4227),AvgI=(0,0),VChr=66,AvgT=(28,28),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-198
+[   65.494202]  (0)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[   65.494219] -(0)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[   65.495669]  (0)[153:healthd]healthd: Unknown battery status '3'
+[   65.496096]  (0)[153:healthd]healthd: battery l=91 v=4222 t=28.0 h=2 st=4 chg=
+[   65.496124]  (0)[153:healthd]healthd: battery l=91 v=4222 t=28.0 h=2 st=4 chg=
+[   65.496209]  (0)[153:healthd]healthd: send_already = 0
+[   66.519820] -(0)[0:swapper/0][Power/swap]CNT(soidle,rgidle): [0] = (0,36830), [1] = (0,35398), [2] = (0,444), [3] = (0,53), 
+[   66.519866] -(0)[0:swapper/0][Power/swap]soidle_block_cnt: [by_cpu] = 16353, [by_clk] = 0, [by_tmr] = 0, [by_oth] = 0, [by_vtg] = 0, 
+[   66.519903] -(0)[0:swapper/0][Power/swap]soidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 
+[   71.556192] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[   75.087241] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[   75.477193]  (1)[143:bat_thread_kthr][BAT_thread]Cable out 
+[   75.494373]  (1)[143:bat_thread_kthr]AvgVbat=(4222,4227),AvgI=(0,0),VChr=66,AvgT=(28,28),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-192
+[   75.494403]  (1)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[   75.494420] -(1)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[   78.213081] -(1)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[   79.739040] -(0)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[   79.781135] -(0)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[   79.858635] -(0)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[   80.477530] -(0)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[   81.511370]  (0)[146:wdtk-0][WDK]: kick Ex WDT,RT[81511351117]
+[   81.561738] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[   85.477285]  (1)[143:bat_thread_kthr][BAT_thread]Cable out 
+[   85.493366]  (1)[143:bat_thread_kthr]AvgVbat=(4223,4230),AvgI=(0,0),VChr=66,AvgT=(28,28),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-181
+[   85.493401]  (1)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[   85.493431] -(1)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[   90.671376]  (1)[117:hang_detect][Hang_Detect] hang_detect disabled.
+[   91.534480] -(0)[0:swapper/0][Power/swap]CNT(dpidle,rgidle): [0] = (0,45606), [1] = (0,43132), [2] = (0,444), [3] = (0,53), 
+[   91.534508] -(0)[0:swapper/0][Power/swap]dpidle_block_cnt: [by_cpu] = 19022, [by_clk] = 0, [by_tmr] = 0, [by_oth] = 0, [by_vtg] = 0, 
+[   91.534526] -(0)[0:swapper/0][Power/swap]dpidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 
+[   91.567233] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[   95.477344]  (1)[143:bat_thread_kthr][BAT_thread]Cable out 
+[   95.501477]  (1)[143:bat_thread_kthr]AvgVbat=(4223,4222),AvgI=(0,0),VChr=66,AvgT=(28,28),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-228
+[   95.501491]  (1)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[   95.501506] -(1)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[   96.545625] -(0)[0:swapper/0][Power/swap]CNT(soidle,rgidle): [0] = (0,47034), [1] = (0,44513), [2] = (0,444), [3] = (0,53), 
+[   96.545635] -(0)[0:swapper/0][Power/swap]soidle_block_cnt: [by_cpu] = 10205, [by_clk] = 0, [by_tmr] = 0, [by_oth] = 0, [by_vtg] = 0, 
+[   96.545646] -(0)[0:swapper/0][Power/swap]soidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 
+[  100.951660]  (0)[94:hps_main]Boot slave CPU
+[  100.952044] -(2)[0:swapper/2]CPU2: Booted secondary processor
+[  100.952191] -(2)[0:swapper/2]CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[  100.953002]  (0)[94:hps_main][HPS] (0080)(2)action end(159)(152)(0)(0) (4)(4)(4)(4)(1) (322)(988)(0) (1031)(987)(3) (0)(152)(988)(0)(152)
+[  101.531362]  (2)[148:wdtk-2][WDK]: kick Ex WDT,RT[101531347395]
+[  101.752108]  (1)[94:hps_main]CPU2: shutdown
+[  101.752541]  (1)[94:hps_main][HPS] (0200)(3)action end(114)(114)(0)(1) (4)(4)(4)(4)(1) (228)(8)(0) (1019)(8)(0) (0)(114)(8)(0)(114)
+[  101.761430] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[  105.477375]  (1)[143:bat_thread_kthr][BAT_thread]Cable out 
+[  105.494389]  (0)[143:bat_thread_kthr]AvgVbat=(4223,4228),AvgI=(0,0),VChr=66,AvgT=(28,28),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-204
+[  105.494425]  (0)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[  105.494448] -(0)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[  105.496424]  (0)[153:healthd]healthd: Unknown battery status '3'
+[  105.496984]  (0)[153:healthd]healthd: battery l=91 v=4223 t=28.0 h=2 st=4 chg=
+[  105.497018]  (0)[153:healthd]healthd: battery l=91 v=4223 t=28.0 h=2 st=4 chg=
+[  105.497132]  (0)[153:healthd]healthd: send_already = 0
+[  111.763996] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[  114.351566]  (0)[94:hps_main]Boot slave CPU
+[  114.351894] -(2)[0:swapper/2]CPU2: Booted secondary processor
+[  114.352045] -(2)[0:swapper/2]CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[  114.352948]  (1)[94:hps_main][HPS] (0080)(2)action end(164)(162)(0)(0) (4)(4)(4)(4)(1) (326)(126)(0) (984)(125)(5) (0)(162)(126)(0)(162)
+[  115.152069]  (0)[94:hps_main]CPU2: shutdown
+[  115.152555]  (0)[94:hps_main][HPS] (0200)(3)action end(110)(111)(0)(1) (4)(4)(4)(4)(1) (224)(8)(0) (1047)(8)(0) (0)(111)(8)(0)(111)
+[  115.477463]  (0)[143:bat_thread_kthr][BAT_thread]Cable out 
+[  115.493895]  (0)[143:bat_thread_kthr]AvgVbat=(4223,4228),AvgI=(0,0),VChr=66,AvgT=(28,28),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-233
+[  115.493925]  (0)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[  115.493942] -(0)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[  120.681354]  (0)[117:hang_detect][Hang_Detect] hang_detect disabled.
+[  121.531357]  (0)[146:wdtk-0][WDK]: kick Ex WDT,RT[121531338904]
+[  121.540350] -(0)[0:swapper/0][Power/swap]CNT(dpidle,rgidle): [0] = (0,57681), [1] = (0,53903), [2] = (0,1438), [3] = (0,53), 
+[  121.540360] -(0)[0:swapper/0][Power/swap]dpidle_block_cnt: [by_cpu] = 23823, [by_clk] = 0, [by_tmr] = 0, [by_oth] = 0, [by_vtg] = 0, 
+[  121.540372] -(0)[0:swapper/0][Power/swap]dpidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 
+[  121.821707] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[  125.477550]  (1)[143:bat_thread_kthr][BAT_thread]Cable out 
+[  125.492761]  (1)[143:bat_thread_kthr]AvgVbat=(4223,4223),AvgI=(0,0),VChr=66,AvgT=(28,28),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-216
+[  125.492793]  (1)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[  125.492811] -(1)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[  126.574582] -(0)[0:swapper/0][Power/swap]CNT(soidle,rgidle): [0] = (0,59081), [1] = (0,55047), [2] = (0,1438), [3] = (0,53), 
+[  126.574609] -(0)[0:swapper/0][Power/swap]soidle_block_cnt: [by_cpu] = 12047, [by_clk] = 0, [by_tmr] = 0, [by_oth] = 0, [by_vtg] = 0, 
+[  126.574627] -(0)[0:swapper/0][Power/swap]soidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 
+[  131.833759] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[  135.477624]  (0)[143:bat_thread_kthr][BAT_thread]Cable out 
+[  135.494951]  (1)[143:bat_thread_kthr]AvgVbat=(4223,4217),AvgI=(0,0),VChr=66,AvgT=(28,28),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-222
+[  135.494994]  (1)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[  135.495022] -(1)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[  135.551565]  (1)[94:hps_main]Boot slave CPU
+[  135.551903] -(2)[0:swapper/2]CPU2: Booted secondary processor
+[  135.552047] -(2)[0:swapper/2]CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[  135.552807]  (1)[94:hps_main][HPS] (0080)(2)action end(164)(154)(0)(0) (4)(4)(4)(4)(1) (322)(204)(0) (1029)(203)(3) (0)(154)(204)(0)(154)
+[  136.352086]  (1)[94:hps_main]CPU2: shutdown
+[  136.352525]  (1)[94:hps_main][HPS] (0200)(3)action end(114)(114)(0)(1) (4)(4)(4)(4)(1) (228)(8)(0) (982)(8)(0) (0)(114)(8)(0)(114)
+[  141.541327]  (1)[147:wdtk-1][WDK]: kick Ex WDT,RT[141541312875]
+[  141.850169] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[  142.051581]  (1)[94:hps_main]Boot slave CPU
+[  142.051906] -(2)[0:swapper/2]CPU2: Booted secondary processor
+[  142.052057] -(2)[0:swapper/2]CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[  142.052930]  (0)[94:hps_main][HPS] (0080)(2)action end(167)(160)(0)(0) (4)(4)(4)(4)(1) (328)(57)(1) (917)(56)(0) (0)(160)(57)(0)(160)
+[  142.852070]  (0)[94:hps_main]CPU2: shutdown
+[  142.852502]  (0)[94:hps_main][HPS] (0200)(3)action end(114)(114)(0)(1) (4)(4)(4)(4)(1) (228)(8)(0) (1027)(8)(0) (0)(114)(8)(0)(114)
+[  145.477691]  (0)[143:bat_thread_kthr][BAT_thread]Cable out 
+[  145.494871]  (1)[143:bat_thread_kthr]AvgVbat=(4223,4221),AvgI=(0,0),VChr=66,AvgT=(28,28),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-198
+[  145.494902]  (1)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[  145.494920] -(1)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[  145.496410]  (1)[153:healthd]healthd: Unknown battery status '3'
+[  145.496856]  (1)[153:healthd]healthd: battery l=91 v=4223 t=28.0 h=2 st=4 chg=
+[  145.496886]  (1)[153:healthd]healthd: battery l=91 v=4223 t=28.0 h=2 st=4 chg=
+[  145.496978]  (1)[153:healthd]healthd: send_already = 0
+[  150.691363]  (0)[117:hang_detect][Hang_Detect] hang_detect disabled.
+[  151.551474] -(0)[0:swapper/0][Power/swap]CNT(dpidle,rgidle): [0] = (0,68664), [1] = (0,63566), [2] = (0,2343), [3] = (0,53), 
+[  151.551501] -(0)[0:swapper/0][Power/swap]dpidle_block_cnt: [by_cpu] = 21534, [by_clk] = 0, [by_tmr] = 0, [by_oth] = 0, [by_vtg] = 0, 
+[  151.551519] -(0)[0:swapper/0][Power/swap]dpidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 
+[  151.855424] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[  155.477766]  (1)[143:bat_thread_kthr][BAT_thread]Cable out 
+[  155.494987]  (0)[143:bat_thread_kthr]AvgVbat=(4223,4229),AvgI=(0,0),VChr=66,AvgT=(28,28),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-181
+[  155.495047]  (0)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[  155.495080] -(0)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[  156.632030] -(0)[0:swapper/0][Power/swap]CNT(soidle,rgidle): [0] = (0,71091), [1] = (0,65636), [2] = (0,2343), [3] = (0,53), 
+[  156.632057] -(0)[0:swapper/0][Power/swap]soidle_block_cnt: [by_cpu] = 12010, [by_clk] = 0, [by_tmr] = 0, [by_oth] = 0, [by_vtg] = 0, 
+[  156.632076] -(0)[0:swapper/0][Power/swap]soidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 
+[  161.551362]  (0)[146:wdtk-0][WDK]: kick Ex WDT,RT[161551342923]
+[  161.875784] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[  165.477851]  (1)[143:bat_thread_kthr][BAT_thread]Cable out 
+[  165.499134]  (1)[143:bat_thread_kthr]AvgVbat=(4223,4227),AvgI=(0,0),VChr=66,AvgT=(28,29),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-192
+[  165.499161]  (1)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[  165.499179] -(1)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[  167.451578]  (0)[94:hps_main]Boot slave CPU
+[  167.451929] -(2)[0:swapper/2]CPU2: Booted secondary processor
+[  167.452083] -(2)[0:swapper/2]CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[  167.452900]  (0)[94:hps_main][HPS] (0080)(2)action end(169)(168)(0)(0) (4)(4)(4)(4)(1) (333)(246)(0) (992)(245)(5) (0)(168)(246)(0)(168)
+[  168.252143]  (0)[94:hps_main]CPU2: shutdown
+[  168.252564]  (0)[94:hps_main][HPS] (0200)(3)action end(112)(112)(0)(1) (4)(4)(4)(4)(1) (226)(8)(0) (938)(8)(0) (0)(112)(8)(0)(112)
+[  171.888931] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[  174.151561]  (1)[94:hps_main]Boot slave CPU
+[  174.151889] -(2)[0:swapper/2]CPU2: Booted secondary processor
+[  174.152030] -(2)[0:swapper/2]CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[  174.152731]  (0)[94:hps_main][HPS] (0080)(2)action end(163)(161)(0)(0) (4)(4)(4)(4)(1) (328)(59)(1) (1021)(58)(2) (0)(161)(59)(0)(161)
+[  174.952384]  (0)[94:hps_main]CPU2: shutdown
+[  174.952866]  (0)[94:hps_main][HPS] (0200)(3)action end(113)(114)(0)(0) (4)(4)(4)(4)(1) (227)(8)(0) (952)(8)(0) (0)(114)(8)(0)(114)
+[  175.477957]  (1)[143:bat_thread_kthr][BAT_thread]Cable out 
+[  175.495112]  (1)[143:bat_thread_kthr]AvgVbat=(4223,4225),AvgI=(0,0),VChr=66,AvgT=(28,29),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-245
+[  175.495143]  (1)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[  175.495160] -(1)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[  177.751581]  (0)[94:hps_main]Boot slave CPU
+[  177.751924] -(2)[0:swapper/2]CPU2: Booted secondary processor
+[  177.752091] -(2)[0:swapper/2]CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[  177.752865]  (0)[94:hps_main][HPS] (0080)(2)action end(158)(136)(0)(0) (4)(4)(4)(4)(1) (323)(28)(0) (1022)(27)(3) (0)(136)(28)(0)(136)
+[  178.552104]  (1)[94:hps_main]CPU2: shutdown
+[  178.552495]  (1)[94:hps_main][HPS] (0200)(3)action end(114)(115)(0)(1) (4)(4)(4)(4)(1) (228)(8)(0) (922)(8)(0) (0)(115)(8)(0)(115)
+[  180.701370]  (1)[117:hang_detect][Hang_Detect] hang_detect disabled.
+[  181.558954] -(0)[0:swapper/0][Power/swap]CNT(dpidle,rgidle): [0] = (0,79826), [1] = (0,73227), [2] = (0,2812), [3] = (0,53), 
+[  181.558999] -(0)[0:swapper/0][Power/swap]dpidle_block_cnt: [by_cpu] = 21272, [by_clk] = 0, [by_tmr] = 0, [by_oth] = 0, [by_vtg] = 0, 
+[  181.559035] -(0)[0:swapper/0][Power/swap]dpidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 
+[  181.561359]  (1)[147:wdtk-1][WDK]: kick Ex WDT,RT[181561344355]
+[  181.940417] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[  185.477997]  (0)[143:bat_thread_kthr][BAT_thread]Cable out 
+[  185.495024]  (0)[143:bat_thread_kthr]AvgVbat=(4223,4227),AvgI=(0,0),VChr=66,AvgT=(28,29),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-187
+[  185.495052]  (0)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[  185.495070] -(0)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[  185.496511]  (0)[153:healthd]healthd: Unknown battery status '3'
+[  185.496919]  (0)[153:healthd]healthd: battery l=91 v=4223 t=28.0 h=2 st=4 chg=
+[  185.496944]  (0)[153:healthd]healthd: battery l=91 v=4223 t=28.0 h=2 st=4 chg=
+[  185.497023]  (0)[153:healthd]healthd: send_already = 0
+[  186.634332] -(0)[0:swapper/0][Power/swap]CNT(soidle,rgidle): [0] = (0,81673), [1] = (0,74869), [2] = (0,2812), [3] = (0,53), 
+[  186.634352] -(0)[0:swapper/0][Power/swap]soidle_block_cnt: [by_cpu] = 10582, [by_clk] = 0, [by_tmr] = 0, [by_oth] = 0, [by_vtg] = 0, 
+[  186.634375] -(0)[0:swapper/0][Power/swap]soidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 
+[  187.651561]  (0)[94:hps_main]Boot slave CPU
+[  187.651874] -(2)[0:swapper/2]CPU2: Booted secondary processor
+[  187.652010] -(2)[0:swapper/2]CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[  187.652782]  (0)[94:hps_main][HPS] (0080)(2)action end(165)(164)(0)(0) (4)(4)(4)(4)(1) (334)(91)(1) (1017)(90)(2) (0)(164)(91)(0)(164)
+[  188.452092]  (0)[94:hps_main]CPU2: shutdown
+[  188.452544]  (0)[94:hps_main][HPS] (0200)(3)action end(114)(114)(0)(1) (4)(4)(4)(4)(1) (228)(8)(0) (930)(8)(0) (0)(114)(8)(0)(114)
+[  191.950289] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[  194.751578]  (1)[94:hps_main]Boot slave CPU
+[  194.751898] -(2)[0:swapper/2]CPU2: Booted secondary processor
+[  194.752045] -(2)[0:swapper/2]CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[  194.752972]  (0)[94:hps_main][HPS] (0080)(2)action end(162)(156)(0)(0) (4)(4)(4)(4)(1) (325)(63)(1) (996)(62)(6) (0)(156)(63)(0)(156)
+[  195.478057]  (0)[143:bat_thread_kthr][BAT_thread]Cable out 
+[  195.492244]  (1)[143:bat_thread_kthr]AvgVbat=(4224,4226),AvgI=(0,0),VChr=66,AvgT=(28,29),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-210
+[  195.492272]  (1)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[  195.492289] -(1)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[  195.552483]  (0)[94:hps_main]CPU2: shutdown
+[  195.552937]  (0)[94:hps_main][HPS] (0200)(3)action end(118)(117)(0)(1) (4)(4)(4)(4)(1) (232)(8)(0) (988)(8)(0) (0)(117)(8)(0)(117)
+[  201.571336]  (0)[146:wdtk-0][WDK]: kick Ex WDT,RT[201571316787]
+[  201.951365] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[  205.478195]  (0)[143:bat_thread_kthr][BAT_thread]Cable out 
+[  205.495112]  (1)[143:bat_thread_kthr]AvgVbat=(4223,4214),AvgI=(0,0),VChr=66,AvgT=(28,29),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-192
+[  205.495139]  (1)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[  205.495157] -(1)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[  206.097340] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  210.711388]  (1)[117:hang_detect][Hang_Detect] hang_detect disabled.
+[  211.560715] -(0)[0:swapper/0][Power/swap]CNT(dpidle,rgidle): [0] = (0,90381), [1] = (0,82148), [2] = (0,3149), [3] = (0,53), 
+[  211.560742] -(0)[0:swapper/0][Power/swap]dpidle_block_cnt: [by_cpu] = 19800, [by_clk] = 0, [by_tmr] = 0, [by_oth] = 0, [by_vtg] = 0, 
+[  211.560761] -(0)[0:swapper/0][Power/swap]dpidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 
+[  211.953551] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[  215.051576]  (1)[94:hps_main]Boot slave CPU
+[  215.051895] -(2)[0:swapper/2]CPU2: Booted secondary processor
+[  215.052041] -(2)[0:swapper/2]CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[  215.052849]  (0)[94:hps_main][HPS] (0080)(2)action end(169)(119)(0)(0) (4)(4)(4)(4)(1) (329)(195)(1) (990)(194)(2) (0)(119)(195)(0)(119)
+[  215.478272]  (2)[143:bat_thread_kthr][BAT_thread]Cable out 
+[  215.489131]  (0)[143:bat_thread_kthr]AvgVbat=(4223,4214),AvgI=(0,0),VChr=66,AvgT=(28,29),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-192
+[  215.489157]  (0)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[  215.489174] -(0)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[  215.952103]  (1)[94:hps_main]CPU2: shutdown
+[  215.952701]  (1)[94:hps_main][HPS] (0200)(3)action end(121)(120)(0)(1) (4)(4)(4)(4)(1) (273)(9)(1) (1070)(9)(1) (0)(120)(9)(0)(120)
+[  216.645109] -(0)[0:swapper/0][Power/swap]CNT(soidle,rgidle): [0] = (0,94233), [1] = (0,85570), [2] = (0,4867), [3] = (0,53), 
+[  216.645120] -(0)[0:swapper/0][Power/swap]soidle_block_cnt: [by_cpu] = 12560, [by_clk] = 0, [by_tmr] = 0, [by_oth] = 0, [by_vtg] = 0, 
+[  216.645131] -(0)[0:swapper/0][Power/swap]soidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 
+[  221.581388]  (1)[147:wdtk-1][WDK]: kick Ex WDT,RT[221581369681]
+[  221.955828] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[  225.481931]  (1)[143:bat_thread_kthr][BAT_thread]Cable out 
+[  225.498877]  (1)[143:bat_thread_kthr]AvgVbat=(4223,4225),AvgI=(0,0),VChr=66,AvgT=(28,29),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-198
+[  225.498904]  (1)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[  225.498921] -(1)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[  225.500342]  (1)[153:healthd]healthd: Unknown battery status '3'
+[  225.500752]  (1)[153:healthd]healthd: battery l=91 v=4223 t=28.0 h=2 st=4 chg=
+[  225.500777]  (1)[153:healthd]healthd: battery l=91 v=4223 t=28.0 h=2 st=4 chg=
+[  225.500860]  (1)[153:healthd]healthd: send_already = 0
+[  227.512174] -(1)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  227.522473] -(0)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  227.558649] -(0)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  231.956410] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[  235.161580]  (0)[94:hps_main]Boot slave CPU
+[  235.161928] -(2)[0:swapper/2]CPU2: Booted secondary processor
+[  235.162093] -(2)[0:swapper/2]CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[  235.162922]  (0)[94:hps_main][HPS] (0080)(2)action end(160)(142)(0)(0) (4)(4)(4)(4)(1) (322)(192)(0) (996)(191)(7) (0)(142)(192)(0)(142)
+[  235.481984]  (1)[143:bat_thread_kthr][BAT_thread]Cable out 
+[  235.498938]  (1)[143:bat_thread_kthr]AvgVbat=(4223,4225),AvgI=(0,0),VChr=66,AvgT=(28,29),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-204
+[  235.498965]  (1)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[  235.498984] -(1)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[  235.962093]  (1)[94:hps_main]CPU2: shutdown
+[  235.962578]  (1)[94:hps_main][HPS] (0200)(3)action end(114)(114)(0)(1) (4)(4)(4)(4)(1) (228)(8)(0) (1008)(8)(0) (0)(114)(8)(0)(114)
+[  237.761572]  (0)[94:hps_main]Boot slave CPU
+[  237.761920] -(2)[0:swapper/2]CPU2: Booted secondary processor
+[  237.762078] -(2)[0:swapper/2]CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[  237.762916]  (1)[94:hps_main][HPS] (0080)(2)action end(165)(158)(0)(0) (4)(4)(4)(4)(1) (331)(18)(0) (1017)(17)(1) (0)(158)(18)(0)(158)
+[  238.562085]  (0)[94:hps_main]CPU2: shutdown
+[  238.562555]  (0)[94:hps_main][HPS] (0200)(3)action end(111)(110)(0)(1) (4)(4)(4)(4)(1) (225)(8)(0) (1043)(8)(0) (0)(110)(8)(0)(110)
+[  240.361584]  (0)[94:hps_main]Boot slave CPU
+[  240.361911] -(2)[0:swapper/2]CPU2: Booted secondary processor
+[  240.362073] -(2)[0:swapper/2]CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[  240.362901]  (0)[94:hps_main][HPS] (0080)(2)action end(180)(156)(0)(0) (4)(4)(4)(4)(1) (355)(18)(0) (1026)(17)(1) (0)(156)(18)(0)(156)
+[  240.721356]  (1)[117:hang_detect][Hang_Detect] hang_detect disabled.
+[  241.162092]  (1)[94:hps_main]CPU2: shutdown
+[  241.162554]  (1)[94:hps_main][HPS] (0200)(3)action end(114)(115)(0)(1) (4)(4)(4)(4)(1) (228)(8)(0) (958)(8)(0) (0)(115)(8)(0)(115)
+[  241.561441] -(0)[0:swapper/0][Power/swap]CNT(dpidle,rgidle): [0] = (0,103279), [1] = (0,93794), [2] = (0,5851), [3] = (0,53), 
+[  241.561471] -(0)[0:swapper/0][Power/swap]dpidle_block_cnt: [by_cpu] = 27216, [by_clk] = 0, [by_tmr] = 0, [by_oth] = 0, [by_vtg] = 0, 
+[  241.561490] -(0)[0:swapper/0][Power/swap]dpidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 
+[  241.591392]  (0)[146:wdtk-0][WDK]: kick Ex WDT,RT[241591371575]
+[  241.958125] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[  244.909775] -(1)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  245.156978] -(0)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  245.201458] -(0)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  245.482029]  (0)[143:bat_thread_kthr][BAT_thread]Cable out 
+[  245.496845]  (0)[143:bat_thread_kthr]AvgVbat=(4223,4225),AvgI=(0,0),VChr=66,AvgT=(28,29),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-204
+[  245.496865]  (0)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[  245.496882] -(0)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[  246.656975] -(0)[0:swapper/0][Power/swap]CNT(soidle,rgidle): [0] = (0,104568), [1] = (0,94871), [2] = (0,5851), [3] = (0,53), 
+[  246.657003] -(0)[0:swapper/0][Power/swap]soidle_block_cnt: [by_cpu] = 10335, [by_clk] = 0, [by_tmr] = 0, [by_oth] = 0, [by_vtg] = 0, 
+[  246.657022] -(0)[0:swapper/0][Power/swap]soidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 
+[  251.965229] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+[  253.471472]  (1)[94:hps_main]Boot slave CPU
+[  253.471674] -(2)[0:swapper/2]CPU2: Booted secondary processor
+[  253.471767] -(2)[0:swapper/2]CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[  253.472218]  (1)[94:hps_main][HPS] (0080)(2)action end(177)(122)(0)(1) (4)(4)(4)(4)(1) (324)(123)(1) (1009)(122)(2) (0)(122)(123)(0)(122)
+[  254.206373] -(2)[0:swapper/2][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  254.209945] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  254.213367] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  254.216064] -(0)[0:swapper/0][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  254.218794] -(0)[0:swapper/0][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  254.220706] -(2)[0:swapper/2][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  254.226553] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  254.229516] -(2)[0:swapper/2][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  254.232011] -(2)[0:swapper/2][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  254.233446] -(2)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  254.272091]  (1)[94:hps_main]CPU2: shutdown
+[  254.272633]  (1)[94:hps_main][HPS] (0200)(3)action end(141)(128)(0)(1) (4)(4)(4)(4)(1) (256)(8)(0) (980)(8)(0) (0)(128)(8)(0)(128)
+[  255.482101]  (0)[143:bat_thread_kthr][BAT_thread]Cable out 
+[  255.498979]  (0)[143:bat_thread_kthr]AvgVbat=(4223,4224),AvgI=(0,0),VChr=66,AvgT=(28,29),SOC=(91,91),UI_SOC=91,ZCV=4257,CHR_Type=0 bcct:0:0 I:7000 Ibat:-210
+[  255.499009]  (0)[143:bat_thread_kthr]UI_SOC=(91), resetBatteryMeter=(0)
+[  255.499027] -(0)[143:bat_thread_kthr]mtk_rtc_hal_common: rtc_spare_reg[0] = {32796, 127, 8}
+[  257.226582]  (1)[163:update_binary]update_binary (163): drop_caches: 3
+[  257.672406]  (0)[94:hps_main]CPU1: shutdown
+[  257.674448]  (0)[94:hps_main][HPS] (0200)(2)action end(17)(17)(0)(0) (4)(4)(4)(4)(1) (34)(34)(0) (487)(34)(2) (0)(17)(34)(0)(17)
+[  258.340535] -(0)[0:swapper/0][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  258.349899] -(0)[0:swapper/0][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  258.371489]  (0)[94:hps_main]Boot slave CPU
+[  258.371694] -(1)[0:swapper/1]CPU1: Booted secondary processor
+[  258.371785] -(1)[0:swapper/1]CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[  258.372187]  (0)[94:hps_main][HPS] (0020)(1)action end(100)(140)(0)(0) (4)(4)(4)(4)(1) (67)(6)(0) (0)(0)(0) (1)(140)(7)(0)(140)
+[  258.376577] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  258.382671] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  258.385281] -(0)[0:swapper/0][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  258.394784] -(0)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  258.408065] -(0)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  258.417499] -(0)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  258.426913] -(0)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  258.437542] -(1)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  258.449446] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  258.460326] -(0)[0:swapper/0][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  258.471404] -(0)[94:hps_main][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  258.487107] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  258.502340] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  258.517833] -(0)[163:update_binary][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  258.551141] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  258.552626] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  259.081708] -(0)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  259.082166] -(0)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  259.082986] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  259.083468] -(0)[156:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  259.091135] -(0)[161:recovery][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  259.092116] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  259.092729] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  259.100078] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  259.100139]  (1)[151:mmcqd/1][sd][msdc_ops_request_legacy] host->continuous_fail_request_count to zero, line:7149
+[  259.100669] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  259.105773] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  259.105831]  (1)[151:mmcqd/1][sd][msdc_ops_request_legacy] host->continuous_fail_request_count to zero, line:7149
+[  259.110777] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  259.110830]  (1)[151:mmcqd/1][sd][msdc_ops_request_legacy] host->continuous_fail_request_count to zero, line:7149
+[  259.111564] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  259.116867] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  259.116924]  (1)[151:mmcqd/1][sd][msdc_ops_request_legacy] host->continuous_fail_request_count to zero, line:7149
+[  259.117059]  (1)[56:kworker/1:1][sd]msdc1 -> XXX DAT block<1> Error<-5> <- msdc_dump_trans_error() : L<6833> PID<kworker/1:1><0x38>
+[  259.117091] [sd]msdc1 TUNE_WRITE: dsmpl<1> rxdly0<0x0> d_cntr<1> sfreq.<208000000>
+[  259.117127]  (1)[56:kworker/1:1][sd]msdc1 -> state<7> card is busy <- msdc_status_verify_case1() : L<2801> PID<kworker/1:1><0x38>
+[  259.227938] -(1)[0:swapper/1][sd][msdc_irq] host->continuous_fail_request_count to zero, line:8249
+[  259.228012]  (1)[56:kworker/1:1][sd][msdc_tune_async_request] host->continuous_fail_request_count to zero, line:7505
+[  259.228042]  (1)[56:kworker/1:1][sd]msdc1 -> CRC TUNE WRITE Times(1) <- msdc_reset_crc_tune_counter() : L<1913> PID<kworker/1:1><0x38>
+[  259.228146]  (0)[151:mmcqd/1][sd][msdc_ops_request_legacy] host->continuous_fail_request_count to zero, line:7149
+[  259.328270]  (1)[1:init]Reboot Process(recovery:156).
+[  259.330236] SysRq : Emergency Remount R/O
+[  259.333718]  (1)[56:kworker/1:1]EXT4-fs (mmcblk0p19): re-mounted. Opts: (null)
+[  259.333883]  (1)[56:kworker/1:1]Emergency Remount complete
+[  259.432596]  (0)[1:init]mmcblk mmc1:59b4: shutdown
+[  259.432672] [sd]msdc1 select card<0x00000000>
+[  259.432710]  (0)[1:init][sd][msdc_ops_request_legacy] host->continuous_fail_request_count to zero, line:7149
+[  259.442886] [sd]msdc1 -> !!! Set<0 Hz>
+[  259.443962]  (0)[1:init]battery battery: shutdown
+[  259.444319]  (0)[1:init]mmcblk mmc0:0001: shutdown
+[  259.445294]  (0)[1:init]battery_meter battery_meter: shutdown
+[  259.445468]  (0)[1:init]ap_ccif0 ap_ccif0: shutdown
+[  259.445526]  (0)[1:init]mtk_disp_mgr mtk_disp_mgr.0: shutdown
+[  259.445573]  (0)[1:init]mtk_vibrator mtk_vibrator: shutdown
+[  259.445604]  (0)[1:init]leds-mt65xx leds-mt65xx: shutdown
+[  259.445639]  (0)[1:init][PWM] disp_pwm_set_backlight_cmdq(id = 0x1, level_1024 = 0), old = -1
+[  259.445690]  (0)[1:init]ltr579 2-0053: shutdown
+[  259.445719]  (0)[1:init]i2c 2-0068: shutdown
+[  259.445746]  (0)[1:init]MC3XXX 2-004c: shutdown
+[  259.445772]  (0)[1:init]i2c 2-000d: shutdown
+[  259.445798]  (0)[1:init]i2c 2-0063: shutdown
+[  259.445825]  (0)[1:init]i2c i2c-2: shutdown
+[  259.445851]  (0)[1:init]i2c 1-0060: shutdown
+[  259.445878]  (0)[1:init]i2c 1-005d: shutdown
+[  259.445904]  (0)[1:init]i2c i2c-1: shutdown
+[  259.445932]  (0)[1:init]kd_camera_hw_bus2 0-0036: shutdown
+[  259.445959]  (0)[1:init]MAINAF 0-000c: shutdown
+[  259.445985]  (0)[1:init]kd_camera_hw 0-0010: shutdown
+[  259.446012]  (0)[1:init]i2c i2c-0: shutdown
+[  259.446152]  (0)[1:init]musb-hdrc musb-hdrc.0.auto: shutdown
+[  259.446497]  (0)[1:init]mt-pmic mt-pmic: shutdown
+[  259.446518]  (0)[1:init][PMIC] ******** MT pmic driver shutdown!! ********
+[  259.446603]  (0)[1:init]kd_camera_flashlight bus:flash: shutdown
+[  259.446634]  (0)[1:init]mtkfb bus:mtkfb@0: shutdown
+[  259.446654]  (0)[1:init]DISP/MTKFB [FB Driver] mtkfb_shutdown()
+[  259.711684]  (0)[1:init][PWM] backlight is off, ddp_pwm power:(0)
+[  259.719233]  (0)[1:init]DISP/MTKFB [FB Driver] leave mtkfb_shutdown
+[  259.719387]  (0)[1:init]DISPSYS 14000000.DISPSYS: shutdown
+[  259.719504]  (0)[1:init]gps bus:gps: shutdown
+[  259.719530]  (0)[1:init][gps]null pointer!!
+[  259.719585]  (0)[1:init]mt-pwm 11008000.PWM: shutdown
+[  259.719698]  (0)[1:init]ap_ccif0 1000c000.ap_ccif0: shutdown
+[  259.719737]  (0)[1:init]mtk-wdt 10007000.TOPRGU: shutdown
+[  259.719826]  (0)[1:init]reboot: Restarting system with command ''
+[  259.719857] -(0)[1:init]machine_restart, arm_pm_restart(  (null))
+[  259.719878] -(0)[1:init]ARCH_RESET happen!!!
+[  259.719898] -(0)[1:init]arch_reset: cmd = 
+[  259.719927] -(0)[1:init]CPU: 0 PID: 1 Comm: init Tainted: G        W      3.18.35+ #2
+[  259.719945] Backtrace: 
+[  259.720001] -(0)[1:init][<c010badc>] (dump_backtrace) from [<c010bc7c>] (show_stack+0x18/0x1c)
+[  259.720020]  r6:c103d790 r5:ffffffff r4:00000000 r3:00000000
+[  259.720096] -(0)[1:init][<c010bc64>] (show_stack) from [<c0a764cc>] (dump_stack+0x90/0xa4)
+[  259.720132] -(0)[1:init][<c0a7643c>] (dump_stack) from [<c07d25b0>] (arch_reset+0x3c/0x10c)
+[  259.720151]  r8:c10ef028 r7:ffffffff r6:00000000 r5:df04be88 r4:c1083490 r3:00000000
+[  259.720235] -(0)[1:init][<c07d2574>] (arch_reset) from [<c07d26ac>] (mtk_arch_reset_handle+0x2c/0x40)
+[  259.720254]  r7:ffffffff r6:00000000 r5:df04be88 r4:00000000
+[  259.720327] -(0)[1:init][<c07d2680>] (mtk_arch_reset_handle) from [<c013e7a4>] (notifier_call_chain+0x9c/0x340)
+[  259.720346]  r5:df04be88 r4:c14b3bd0
+[  259.720397] -(0)[1:init][<c013e708>] (notifier_call_chain) from [<c013ebd0>] (atomic_notifier_call_chain+0x3c/0x50)
+[  259.720416]  r10:00000000 r9:df04a000 r8:c01071a4 r7:fee1dead r6:c10ef024 r5:00000000
+[  259.720486]  r4:df04be88
+[  259.720528] -(0)[1:init][<c013eb94>] (atomic_notifier_call_chain) from [<c013ff7c>] (do_kernel_restart+0x24/0x2c)
+[  259.720547]  r6:b6e15e8c r5:df04be88 r4:c10edf28
+[  259.720610] -(0)[1:init][<c013ff58>] (do_kernel_restart) from [<c0108720>] (machine_restart+0x90/0x94)
+[  259.720642] -(0)[1:init][<c0108690>] (machine_restart) from [<c0140064>] (kernel_restart+0x44/0x58)
+[  259.720661]  r5:00000000 r4:df04be88
+[  259.720712] -(0)[1:init][<c0140020>] (kernel_restart) from [<c0140410>] (SyS_reboot+0x18c/0x1c0)
+[  259.720730]  r4:c102bd90 r3:00000000
+[  259.720782] -(0)[1:init][<c0140284>] (SyS_reboot) from [<c0107000>] (ret_fast_syscall+0x0/0x38)
+[  259.720800]  r7:00000058 r6:00000000 r5:dead0003 r4:b6e15e8c
+[  259.721005] -(0)[1:init]****************dump wdt reg start*************
+[  259.721026] -(0)[1:init]MTK_WDT_MODE:0x14
+[  259.721046] -(0)[1:init]MTK_WDT_LENGTH:0xf000
+================ END of FILE ===============
+

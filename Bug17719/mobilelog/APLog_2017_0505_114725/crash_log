@@ -1,0 +1,324 @@
+----- timezone:GMT
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: FATAL EXCEPTION: main
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: Process: com.android.dialer, PID: 12002
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=200, result=-1, data=Intent { (has extras) }} to activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.android.contacts.common.list.ContactListFilterController.setContactListFilter(com.android.contacts.common.list.ContactListFilter, boolean)' on a null object reference
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3516)
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3556)
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2797)
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1529)
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:110)
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:203)
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6285)
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1063)
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:924)
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: Caused by: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=200, result=-1, data=Intent { (has extras) }} to activity {com.android.dialer/com.android.contacts.activities.PeopleActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.android.contacts.common.list.ContactListFilterController.setContactListFilter(com.android.contacts.common.list.ContactListFilter, boolean)' on a null object reference
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:4212)
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3484)
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: 	... 10 more
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.android.contacts.common.list.ContactListFilterController.setContactListFilter(com.android.contacts.common.list.ContactListFilter, boolean)' on a null object reference
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: 	at com.android.contacts.common.util.AccountFilterUtil.handleAccountFilterResult(Unknown Source)
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: 	at com.android.dialer.DialtactsActivity.onActivityResult(Unknown Source)
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: 	at android.app.Activity.dispatchActivityResult(Activity.java:6919)
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:4208)
+05-04 14:59:58.678076 12002 12002 E AndroidRuntime: 	... 11 more
+05-04 19:00:00.201465 19432 19432 F libc    : "/data/data/com.tencent.android.qqdownloader/lib/libaurora.so": error: only position independent executables (PIE) are supported.
+05-04 19:00:00.201703 19432 19432 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 19432 (libaurora.so)
+05-04 19:00:00.321908 19437 19437 I AEE/AED : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+05-04 19:00:00.330184 19437 19437 I AEE/AED : Build fingerprint: 'Itel/P51/P51:7.0/NRD90M/P51-I802-7.0-V025-170504:user/release-keys'
+05-04 19:00:00.330305 19437 19437 I AEE/AED : Revision: '0'
+05-04 19:00:00.330374 19437 19437 I AEE/AED : ABI: 'arm'
+05-04 19:00:00.330745 19437 19437 I AEE/AED : pid: 19432, tid: 19432, name: libaurora.so  >>> /data/data/com.tencent.android.qqdownloader/lib/libaurora.so <<<
+05-04 19:00:00.330910 19437 19437 I AEE/AED : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+05-04 19:00:00.331017 19437 19437 I AEE/AED :     r0 00000000  r1 00004be8  r2 00000006  r3 00000008
+05-04 19:00:00.331088 19437 19437 I AEE/AED :     r4 b1e9558c  r5 00000006  r6 b1e95534  r7 0000010c
+05-04 19:00:00.331150 19437 19437 I AEE/AED :     r8 b1e24010  r9 00000000  sl 00000000  fp bec00a14
+05-04 19:00:00.331220 19437 19437 I AEE/AED :     ip 00000000  sp bebff770  lr b1e75dff  pc b1e76844  cpsr 200f0010
+05-04 19:00:00.358485 19437 19437 I AEE/AED : 
+05-04 19:00:00.358485 19437 19437 I AEE/AED : backtrace:
+05-04 19:00:00.358706 19437 19437 I AEE/AED :     #00 pc 00045844  /system/bin/linker (__dl_tgkill+12)
+05-04 19:00:00.358796 19437 19437 I AEE/AED :     #01 pc 00044dfb  /system/bin/linker (__dl_pthread_kill+34)
+05-04 19:00:00.358888 19437 19437 I AEE/AED :     #02 pc 0003d17f  /system/bin/linker (__dl_raise+10)
+05-04 19:00:00.358977 19437 19437 I AEE/AED :     #03 pc 0003bc2b  /system/bin/linker (__dl___libc_android_abort+34)
+05-04 19:00:00.359058 19437 19437 I AEE/AED :     #04 pc 0003aa88  /system/bin/linker (__dl_abort+4)
+05-04 19:00:00.359188 19437 19437 I AEE/AED :     #05 pc 0003cc7b  /system/bin/linker (__dl___libc_fatal+22)
+05-04 19:00:00.359290 19437 19437 I AEE/AED :     #06 pc 000093bb  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+2250)
+05-04 19:00:00.359516 19437 19437 I AEE/AED :     #07 pc 00008a5b  /system/bin/linker (__dl___linker_init+358)
+05-04 19:00:00.359597 19437 19437 I AEE/AED :     #08 pc 00002770  /system/bin/linker (_start+4)
+05-04 19:00:49.906197 23028 23028 F libc    : "/data/data/com.tencent.android.qqdownloader/lib/libaurora.so": error: only position independent executables (PIE) are supported.
+05-04 19:00:49.906564 23028 23028 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 23028 (libaurora.so)
+05-04 19:00:50.011721 23043 23043 I AEE/AED : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+05-04 19:00:50.013012 23043 23043 I AEE/AED : Build fingerprint: 'Itel/P51/P51:7.0/NRD90M/P51-I802-7.0-V025-170504:user/release-keys'
+05-04 19:00:50.013077 23043 23043 I AEE/AED : Revision: '0'
+05-04 19:00:50.013132 23043 23043 I AEE/AED : ABI: 'arm'
+05-04 19:00:50.013442 23043 23043 I AEE/AED : pid: 23028, tid: 23028, name: libaurora.so  >>> /data/data/com.tencent.android.qqdownloader/lib/libaurora.so <<<
+05-04 19:00:50.013558 23043 23043 I AEE/AED : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+05-04 19:00:50.013676 23043 23043 I AEE/AED :     r0 00000000  r1 000059f4  r2 00000006  r3 00000008
+05-04 19:00:50.013752 23043 23043 I AEE/AED :     r4 a849958c  r5 00000006  r6 a8499534  r7 0000010c
+05-04 19:00:50.013813 23043 23043 I AEE/AED :     r8 a8428010  r9 00000000  sl 00000000  fp be89ba14
+05-04 19:00:50.013871 23043 23043 I AEE/AED :     ip 00000000  sp be89a770  lr a8479dff  pc a847a844  cpsr 200f0010
+05-04 19:00:50.029677 23043 23043 I AEE/AED : 
+05-04 19:00:50.029677 23043 23043 I AEE/AED : backtrace:
+05-04 19:00:50.029841 23043 23043 I AEE/AED :     #00 pc 00045844  /system/bin/linker (__dl_tgkill+12)
+05-04 19:00:50.029940 23043 23043 I AEE/AED :     #01 pc 00044dfb  /system/bin/linker (__dl_pthread_kill+34)
+05-04 19:00:50.030021 23043 23043 I AEE/AED :     #02 pc 0003d17f  /system/bin/linker (__dl_raise+10)
+05-04 19:00:50.030101 23043 23043 I AEE/AED :     #03 pc 0003bc2b  /system/bin/linker (__dl___libc_android_abort+34)
+05-04 19:00:50.030187 23043 23043 I AEE/AED :     #04 pc 0003aa88  /system/bin/linker (__dl_abort+4)
+05-04 19:00:50.030298 23043 23043 I AEE/AED :     #05 pc 0003cc7b  /system/bin/linker (__dl___libc_fatal+22)
+05-04 19:00:50.030391 23043 23043 I AEE/AED :     #06 pc 000093bb  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+2250)
+05-04 19:00:50.030475 23043 23043 I AEE/AED :     #07 pc 00008a5b  /system/bin/linker (__dl___linker_init+358)
+05-04 19:00:50.030553 23043 23043 I AEE/AED :     #08 pc 00002770  /system/bin/linker (_start+4)
+05-04 19:01:18.350845 24589 24589 F libc    : "/data/data/com.tencent.android.qqdownloader/lib/libaurora.so": error: only position independent executables (PIE) are supported.
+05-04 19:01:18.351180 24589 24589 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 24589 (libaurora.so)
+05-04 19:01:18.595556 24598 24598 I AEE/AED : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+05-04 19:01:18.612595 24598 24598 I AEE/AED : Build fingerprint: 'Itel/P51/P51:7.0/NRD90M/P51-I802-7.0-V025-170504:user/release-keys'
+05-04 19:01:18.612661 24598 24598 I AEE/AED : Revision: '0'
+05-04 19:01:18.612719 24598 24598 I AEE/AED : ABI: 'arm'
+05-04 19:01:18.613032 24598 24598 I AEE/AED : pid: 24589, tid: 24589, name: libaurora.so  >>> /data/data/com.tencent.android.qqdownloader/lib/libaurora.so <<<
+05-04 19:01:18.613152 24598 24598 I AEE/AED : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+05-04 19:01:18.613237 24598 24598 I AEE/AED :     r0 00000000  r1 0000600d  r2 00000006  r3 00000008
+05-04 19:01:18.613302 24598 24598 I AEE/AED :     r4 b1bab58c  r5 00000006  r6 b1bab534  r7 0000010c
+05-04 19:01:18.613363 24598 24598 I AEE/AED :     r8 b1b3a010  r9 00000000  sl 00000000  fp be93aa14
+05-04 19:01:18.613418 24598 24598 I AEE/AED :     ip 00000000  sp be939770  lr b1b8bdff  pc b1b8c844  cpsr 200f0010
+05-04 19:01:18.628790 24598 24598 I AEE/AED : 
+05-04 19:01:18.628790 24598 24598 I AEE/AED : backtrace:
+05-04 19:01:18.628926 24598 24598 I AEE/AED :     #00 pc 00045844  /system/bin/linker (__dl_tgkill+12)
+05-04 19:01:18.629046 24598 24598 I AEE/AED :     #01 pc 00044dfb  /system/bin/linker (__dl_pthread_kill+34)
+05-04 19:01:18.629147 24598 24598 I AEE/AED :     #02 pc 0003d17f  /system/bin/linker (__dl_raise+10)
+05-04 19:01:18.629239 24598 24598 I AEE/AED :     #03 pc 0003bc2b  /system/bin/linker (__dl___libc_android_abort+34)
+05-04 19:01:18.630422 24598 24598 I AEE/AED :     #04 pc 0003aa88  /system/bin/linker (__dl_abort+4)
+05-04 19:01:18.630590 24598 24598 I AEE/AED :     #05 pc 0003cc7b  /system/bin/linker (__dl___libc_fatal+22)
+05-04 19:01:18.630674 24598 24598 I AEE/AED :     #06 pc 000093bb  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+2250)
+05-04 19:01:18.630753 24598 24598 I AEE/AED :     #07 pc 00008a5b  /system/bin/linker (__dl___linker_init+358)
+05-04 19:01:18.630831 24598 24598 I AEE/AED :     #08 pc 00002770  /system/bin/linker (_start+4)
+05-04 19:03:44.545329 30824 30824 F libc    : "/data/data/com.tencent.android.qqdownloader/lib/libaurora.so": error: only position independent executables (PIE) are supported.
+05-04 19:03:44.545508 30824 30824 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 30824 (libaurora.so)
+05-04 19:03:44.635042 30826 30826 I AEE/AED : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+05-04 19:03:44.635459 30826 30826 I AEE/AED : Build fingerprint: 'Itel/P51/P51:7.0/NRD90M/P51-I802-7.0-V025-170504:user/release-keys'
+05-04 19:03:44.635696 30826 30826 I AEE/AED : Revision: '0'
+05-04 19:03:44.635751 30826 30826 I AEE/AED : ABI: 'arm'
+05-04 19:03:44.635987 30826 30826 I AEE/AED : pid: 30824, tid: 30824, name: libaurora.so  >>> /data/data/com.tencent.android.qqdownloader/lib/libaurora.so <<<
+05-04 19:03:44.636092 30826 30826 I AEE/AED : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+05-04 19:03:44.636173 30826 30826 I AEE/AED :     r0 00000000  r1 00007868  r2 00000006  r3 00000008
+05-04 19:03:44.636228 30826 30826 I AEE/AED :     r4 abf1b58c  r5 00000006  r6 abf1b534  r7 0000010c
+05-04 19:03:44.636292 30826 30826 I AEE/AED :     r8 abeaa010  r9 00000000  sl 00000000  fp beaa3a14
+05-04 19:03:44.636354 30826 30826 I AEE/AED :     ip 00000000  sp beaa2770  lr abefbdff  pc abefc844  cpsr 200f0010
+05-04 19:03:44.661976 30826 30826 I AEE/AED : 
+05-04 19:03:44.661976 30826 30826 I AEE/AED : backtrace:
+05-04 19:03:44.662150 30826 30826 I AEE/AED :     #00 pc 00045844  /system/bin/linker (__dl_tgkill+12)
+05-04 19:03:44.662321 30826 30826 I AEE/AED :     #01 pc 00044dfb  /system/bin/linker (__dl_pthread_kill+34)
+05-04 19:03:44.662438 30826 30826 I AEE/AED :     #02 pc 0003d17f  /system/bin/linker (__dl_raise+10)
+05-04 19:03:44.662555 30826 30826 I AEE/AED :     #03 pc 0003bc2b  /system/bin/linker (__dl___libc_android_abort+34)
+05-04 19:03:44.662670 30826 30826 I AEE/AED :     #04 pc 0003aa88  /system/bin/linker (__dl_abort+4)
+05-04 19:03:44.662793 30826 30826 I AEE/AED :     #05 pc 0003cc7b  /system/bin/linker (__dl___libc_fatal+22)
+05-04 19:03:44.662900 30826 30826 I AEE/AED :     #06 pc 000093bb  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+2250)
+05-04 19:03:44.662996 30826 30826 I AEE/AED :     #07 pc 00008a5b  /system/bin/linker (__dl___linker_init+358)
+05-04 19:03:44.663096 30826 30826 I AEE/AED :     #08 pc 00002770  /system/bin/linker (_start+4)
+05-04 19:03:55.314205 31480 31480 F libc    : "/data/data/com.tencent.android.qqdownloader/lib/libaurora.so": error: only position independent executables (PIE) are supported.
+05-04 19:03:55.314499 31480 31480 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 31480 (libaurora.so)
+05-04 19:03:55.375961 31482 31482 I AEE/AED : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+05-04 19:03:55.376212 31482 31482 I AEE/AED : Build fingerprint: 'Itel/P51/P51:7.0/NRD90M/P51-I802-7.0-V025-170504:user/release-keys'
+05-04 19:03:55.376291 31482 31482 I AEE/AED : Revision: '0'
+05-04 19:03:55.376356 31482 31482 I AEE/AED : ABI: 'arm'
+05-04 19:03:55.376629 31482 31482 I AEE/AED : pid: 31480, tid: 31480, name: libaurora.so  >>> /data/data/com.tencent.android.qqdownloader/lib/libaurora.so <<<
+05-04 19:03:55.376800 31482 31482 I AEE/AED : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+05-04 19:03:55.376885 31482 31482 I AEE/AED :     r0 00000000  r1 00007af8  r2 00000006  r3 00000008
+05-04 19:03:55.376981 31482 31482 I AEE/AED :     r4 b1c1a58c  r5 00000006  r6 b1c1a534  r7 0000010c
+05-04 19:03:55.377034 31482 31482 I AEE/AED :     r8 b1ba9010  r9 00000000  sl 00000000  fp be9dca14
+05-04 19:03:55.377088 31482 31482 I AEE/AED :     ip 00000000  sp be9db770  lr b1bfadff  pc b1bfb844  cpsr 200f0010
+05-04 19:03:55.389690 31482 31482 I AEE/AED : 
+05-04 19:03:55.389690 31482 31482 I AEE/AED : backtrace:
+05-04 19:03:55.389828 31482 31482 I AEE/AED :     #00 pc 00045844  /system/bin/linker (__dl_tgkill+12)
+05-04 19:03:55.389918 31482 31482 I AEE/AED :     #01 pc 00044dfb  /system/bin/linker (__dl_pthread_kill+34)
+05-04 19:03:55.389992 31482 31482 I AEE/AED :     #02 pc 0003d17f  /system/bin/linker (__dl_raise+10)
+05-04 19:03:55.390066 31482 31482 I AEE/AED :     #03 pc 0003bc2b  /system/bin/linker (__dl___libc_android_abort+34)
+05-04 19:03:55.390141 31482 31482 I AEE/AED :     #04 pc 0003aa88  /system/bin/linker (__dl_abort+4)
+05-04 19:03:55.390221 31482 31482 I AEE/AED :     #05 pc 0003cc7b  /system/bin/linker (__dl___libc_fatal+22)
+05-04 19:03:55.390306 31482 31482 I AEE/AED :     #06 pc 000093bb  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+2250)
+05-04 19:03:55.390385 31482 31482 I AEE/AED :     #07 pc 00008a5b  /system/bin/linker (__dl___linker_init+358)
+05-04 19:03:55.390455 31482 31482 I AEE/AED :     #08 pc 00002770  /system/bin/linker (_start+4)
+05-04 19:04:07.005166 32139 32139 F libc    : "/data/data/com.tencent.android.qqdownloader/lib/libaurora.so": error: only position independent executables (PIE) are supported.
+05-04 19:04:07.005516 32139 32139 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 32139 (libaurora.so)
+05-04 19:04:07.080459 32141 32141 I AEE/AED : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+05-04 19:04:07.081564 32141 32141 I AEE/AED : Build fingerprint: 'Itel/P51/P51:7.0/NRD90M/P51-I802-7.0-V025-170504:user/release-keys'
+05-04 19:04:07.081632 32141 32141 I AEE/AED : Revision: '0'
+05-04 19:04:07.081680 32141 32141 I AEE/AED : ABI: 'arm'
+05-04 19:04:07.081998 32141 32141 I AEE/AED : pid: 32139, tid: 32139, name: libaurora.so  >>> /data/data/com.tencent.android.qqdownloader/lib/libaurora.so <<<
+05-04 19:04:07.082126 32141 32141 I AEE/AED : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+05-04 19:04:07.082211 32141 32141 I AEE/AED :     r0 00000000  r1 00007d8b  r2 00000006  r3 00000008
+05-04 19:04:07.082270 32141 32141 I AEE/AED :     r4 af81658c  r5 00000006  r6 af816534  r7 0000010c
+05-04 19:04:07.082324 32141 32141 I AEE/AED :     r8 af7a5010  r9 00000000  sl 00000000  fp becc4a14
+05-04 19:04:07.082389 32141 32141 I AEE/AED :     ip 00000000  sp becc3770  lr af7f6dff  pc af7f7844  cpsr 200f0010
+05-04 19:04:07.095471 32141 32141 I AEE/AED : 
+05-04 19:04:07.095471 32141 32141 I AEE/AED : backtrace:
+05-04 19:04:07.095633 32141 32141 I AEE/AED :     #00 pc 00045844  /system/bin/linker (__dl_tgkill+12)
+05-04 19:04:07.095720 32141 32141 I AEE/AED :     #01 pc 00044dfb  /system/bin/linker (__dl_pthread_kill+34)
+05-04 19:04:07.095814 32141 32141 I AEE/AED :     #02 pc 0003d17f  /system/bin/linker (__dl_raise+10)
+05-04 19:04:07.095915 32141 32141 I AEE/AED :     #03 pc 0003bc2b  /system/bin/linker (__dl___libc_android_abort+34)
+05-04 19:04:07.096010 32141 32141 I AEE/AED :     #04 pc 0003aa88  /system/bin/linker (__dl_abort+4)
+05-04 19:04:07.096099 32141 32141 I AEE/AED :     #05 pc 0003cc7b  /system/bin/linker (__dl___libc_fatal+22)
+05-04 19:04:07.096201 32141 32141 I AEE/AED :     #06 pc 000093bb  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+2250)
+05-04 19:04:07.096296 32141 32141 I AEE/AED :     #07 pc 00008a5b  /system/bin/linker (__dl___linker_init+358)
+05-04 19:04:07.096401 32141 32141 I AEE/AED :     #08 pc 00002770  /system/bin/linker (_start+4)
+05-04 19:04:12.573846 32424 32424 F libc    : "/data/data/com.tencent.android.qqdownloader/lib/libaurora.so": error: only position independent executables (PIE) are supported.
+05-04 19:04:12.574078 32424 32424 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 32424 (libaurora.so)
+05-04 19:04:12.635685 32426 32426 I AEE/AED : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+05-04 19:04:12.710395 32426 32426 I AEE/AED : Build fingerprint: 'Itel/P51/P51:7.0/NRD90M/P51-I802-7.0-V025-170504:user/release-keys'
+05-04 19:04:12.710487 32426 32426 I AEE/AED : Revision: '0'
+05-04 19:04:12.710540 32426 32426 I AEE/AED : ABI: 'arm'
+05-04 19:04:12.710828 32426 32426 I AEE/AED : pid: 32424, tid: 32424, name: libaurora.so  >>> /data/data/com.tencent.android.qqdownloader/lib/libaurora.so <<<
+05-04 19:04:12.710945 32426 32426 I AEE/AED : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+05-04 19:04:12.711038 32426 32426 I AEE/AED :     r0 00000000  r1 00007ea8  r2 00000006  r3 00000008
+05-04 19:04:12.711100 32426 32426 I AEE/AED :     r4 b686958c  r5 00000006  r6 b6869534  r7 0000010c
+05-04 19:04:12.711167 32426 32426 I AEE/AED :     r8 b67f8010  r9 00000000  sl 00000000  fp becd6a14
+05-04 19:04:12.711236 32426 32426 I AEE/AED :     ip 00000000  sp becd5770  lr b6849dff  pc b684a844  cpsr 200f0010
+05-04 19:04:12.863344 32426 32426 I AEE/AED : 
+05-04 19:04:12.863344 32426 32426 I AEE/AED : backtrace:
+05-04 19:04:12.863491 32426 32426 I AEE/AED :     #00 pc 00045844  /system/bin/linker (__dl_tgkill+12)
+05-04 19:04:12.863578 32426 32426 I AEE/AED :     #01 pc 00044dfb  /system/bin/linker (__dl_pthread_kill+34)
+05-04 19:04:12.863658 32426 32426 I AEE/AED :     #02 pc 0003d17f  /system/bin/linker (__dl_raise+10)
+05-04 19:04:12.863758 32426 32426 I AEE/AED :     #03 pc 0003bc2b  /system/bin/linker (__dl___libc_android_abort+34)
+05-04 19:04:12.863859 32426 32426 I AEE/AED :     #04 pc 0003aa88  /system/bin/linker (__dl_abort+4)
+05-04 19:04:12.863950 32426 32426 I AEE/AED :     #05 pc 0003cc7b  /system/bin/linker (__dl___libc_fatal+22)
+05-04 19:04:12.864051 32426 32426 I AEE/AED :     #06 pc 000093bb  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+2250)
+05-04 19:04:12.864150 32426 32426 I AEE/AED :     #07 pc 00008a5b  /system/bin/linker (__dl___linker_init+358)
+05-04 19:04:12.864248 32426 32426 I AEE/AED :     #08 pc 00002770  /system/bin/linker (_start+4)
+05-04 19:04:22.605035 32710 32710 F libc    : "/data/data/com.tencent.android.qqdownloader/lib/libaurora.so": error: only position independent executables (PIE) are supported.
+05-04 19:04:22.605245 32710 32710 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 32710 (libaurora.so)
+05-04 19:04:22.673170 32718 32718 I AEE/AED : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+05-04 19:04:22.673520 32718 32718 I AEE/AED : Build fingerprint: 'Itel/P51/P51:7.0/NRD90M/P51-I802-7.0-V025-170504:user/release-keys'
+05-04 19:04:22.673618 32718 32718 I AEE/AED : Revision: '0'
+05-04 19:04:22.673768 32718 32718 I AEE/AED : ABI: 'arm'
+05-04 19:04:22.674062 32718 32718 I AEE/AED : pid: 32710, tid: 32710, name: libaurora.so  >>> /data/data/com.tencent.android.qqdownloader/lib/libaurora.so <<<
+05-04 19:04:22.674172 32718 32718 I AEE/AED : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+05-04 19:04:22.674258 32718 32718 I AEE/AED :     r0 00000000  r1 00007fc6  r2 00000006  r3 00000008
+05-04 19:04:22.674331 32718 32718 I AEE/AED :     r4 b1ea858c  r5 00000006  r6 b1ea8534  r7 0000010c
+05-04 19:04:22.674377 32718 32718 I AEE/AED :     r8 b1e37010  r9 00000000  sl 00000000  fp beaf0a14
+05-04 19:04:22.674423 32718 32718 I AEE/AED :     ip 00000000  sp beaef770  lr b1e88dff  pc b1e89844  cpsr 200f0010
+05-04 19:04:22.691807 32718 32718 I AEE/AED : 
+05-04 19:04:22.691807 32718 32718 I AEE/AED : backtrace:
+05-04 19:04:22.692454 32718 32718 I AEE/AED :     #00 pc 00045844  /system/bin/linker (__dl_tgkill+12)
+05-04 19:04:22.692550 32718 32718 I AEE/AED :     #01 pc 00044dfb  /system/bin/linker (__dl_pthread_kill+34)
+05-04 19:04:22.692627 32718 32718 I AEE/AED :     #02 pc 0003d17f  /system/bin/linker (__dl_raise+10)
+05-04 19:04:22.692723 32718 32718 I AEE/AED :     #03 pc 0003bc2b  /system/bin/linker (__dl___libc_android_abort+34)
+05-04 19:04:22.692804 32718 32718 I AEE/AED :     #04 pc 0003aa88  /system/bin/linker (__dl_abort+4)
+05-04 19:04:22.692881 32718 32718 I AEE/AED :     #05 pc 0003cc7b  /system/bin/linker (__dl___libc_fatal+22)
+05-04 19:04:22.692968 32718 32718 I AEE/AED :     #06 pc 000093bb  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+2250)
+05-04 19:04:22.693042 32718 32718 I AEE/AED :     #07 pc 00008a5b  /system/bin/linker (__dl___linker_init+358)
+05-04 19:04:22.693115 32718 32718 I AEE/AED :     #08 pc 00002770  /system/bin/linker (_start+4)
+05-04 19:04:30.441775   862   862 F libc    : "/data/data/com.tencent.android.qqdownloader/lib/libaurora.so": error: only position independent executables (PIE) are supported.
+05-04 19:04:30.442015   862   862 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 862 (libaurora.so)
+05-04 19:04:30.505567   864   864 I AEE/AED : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+05-04 19:04:30.505868   864   864 I AEE/AED : Build fingerprint: 'Itel/P51/P51:7.0/NRD90M/P51-I802-7.0-V025-170504:user/release-keys'
+05-04 19:04:30.505952   864   864 I AEE/AED : Revision: '0'
+05-04 19:04:30.506081   864   864 I AEE/AED : ABI: 'arm'
+05-04 19:04:30.506411   864   864 I AEE/AED : pid: 862, tid: 862, name: libaurora.so  >>> /data/data/com.tencent.android.qqdownloader/lib/libaurora.so <<<
+05-04 19:04:30.506567   864   864 I AEE/AED : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+05-04 19:04:30.506677   864   864 I AEE/AED :     r0 00000000  r1 0000035e  r2 00000006  r3 00000008
+05-04 19:04:30.506749   864   864 I AEE/AED :     r4 aeb3a58c  r5 00000006  r6 aeb3a534  r7 0000010c
+05-04 19:04:30.506819   864   864 I AEE/AED :     r8 aeac9010  r9 00000000  sl 00000000  fp beb6aa14
+05-04 19:04:30.506882   864   864 I AEE/AED :     ip 00000000  sp beb69770  lr aeb1adff  pc aeb1b844  cpsr 200f0010
+05-04 19:04:30.523296   864   864 I AEE/AED : 
+05-04 19:04:30.523296   864   864 I AEE/AED : backtrace:
+05-04 19:04:30.524131   864   864 I AEE/AED :     #00 pc 00045844  /system/bin/linker (__dl_tgkill+12)
+05-04 19:04:30.524265   864   864 I AEE/AED :     #01 pc 00044dfb  /system/bin/linker (__dl_pthread_kill+34)
+05-04 19:04:30.524349   864   864 I AEE/AED :     #02 pc 0003d17f  /system/bin/linker (__dl_raise+10)
+05-04 19:04:30.524427   864   864 I AEE/AED :     #03 pc 0003bc2b  /system/bin/linker (__dl___libc_android_abort+34)
+05-04 19:04:30.524512   864   864 I AEE/AED :     #04 pc 0003aa88  /system/bin/linker (__dl_abort+4)
+05-04 19:04:30.524593   864   864 I AEE/AED :     #05 pc 0003cc7b  /system/bin/linker (__dl___libc_fatal+22)
+05-04 19:04:30.524681   864   864 I AEE/AED :     #06 pc 000093bb  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+2250)
+05-04 19:04:30.524775   864   864 I AEE/AED :     #07 pc 00008a5b  /system/bin/linker (__dl___linker_init+358)
+05-04 19:04:30.524862   864   864 I AEE/AED :     #08 pc 00002770  /system/bin/linker (_start+4)
+05-04 19:05:05.467374  3247  3247 F libc    : "/data/data/com.tencent.android.qqdownloader/lib/libaurora.so": error: only position independent executables (PIE) are supported.
+05-04 19:05:05.467576  3247  3247 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3247 (libaurora.so)
+05-04 19:05:05.543386  3249  3249 I AEE/AED : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+05-04 19:05:05.546916  3249  3249 I AEE/AED : Build fingerprint: 'Itel/P51/P51:7.0/NRD90M/P51-I802-7.0-V025-170504:user/release-keys'
+05-04 19:05:05.546984  3249  3249 I AEE/AED : Revision: '0'
+05-04 19:05:05.547037  3249  3249 I AEE/AED : ABI: 'arm'
+05-04 19:05:05.547305  3249  3249 I AEE/AED : pid: 3247, tid: 3247, name: libaurora.so  >>> /data/data/com.tencent.android.qqdownloader/lib/libaurora.so <<<
+05-04 19:05:05.547458  3249  3249 I AEE/AED : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+05-04 19:05:05.547552  3249  3249 I AEE/AED :     r0 00000000  r1 00000caf  r2 00000006  r3 00000008
+05-04 19:05:05.547609  3249  3249 I AEE/AED :     r4 adb5058c  r5 00000006  r6 adb50534  r7 0000010c
+05-04 19:05:05.547660  3249  3249 I AEE/AED :     r8 adadf010  r9 00000000  sl 00000000  fp bea27a14
+05-04 19:05:05.547710  3249  3249 I AEE/AED :     ip 00000000  sp bea26770  lr adb30dff  pc adb31844  cpsr 200f0010
+05-04 19:05:05.570460  3249  3249 I AEE/AED : 
+05-04 19:05:05.570460  3249  3249 I AEE/AED : backtrace:
+05-04 19:05:05.570608  3249  3249 I AEE/AED :     #00 pc 00045844  /system/bin/linker (__dl_tgkill+12)
+05-04 19:05:05.570694  3249  3249 I AEE/AED :     #01 pc 00044dfb  /system/bin/linker (__dl_pthread_kill+34)
+05-04 19:05:05.570774  3249  3249 I AEE/AED :     #02 pc 0003d17f  /system/bin/linker (__dl_raise+10)
+05-04 19:05:05.570851  3249  3249 I AEE/AED :     #03 pc 0003bc2b  /system/bin/linker (__dl___libc_android_abort+34)
+05-04 19:05:05.570925  3249  3249 I AEE/AED :     #04 pc 0003aa88  /system/bin/linker (__dl_abort+4)
+05-04 19:05:05.571009  3249  3249 I AEE/AED :     #05 pc 0003cc7b  /system/bin/linker (__dl___libc_fatal+22)
+05-04 19:05:05.571086  3249  3249 I AEE/AED :     #06 pc 000093bb  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+2250)
+05-04 19:05:05.571163  3249  3249 I AEE/AED :     #07 pc 00008a5b  /system/bin/linker (__dl___linker_init+358)
+05-04 19:05:05.571231  3249  3249 I AEE/AED :     #08 pc 00002770  /system/bin/linker (_start+4)
+05-04 19:05:28.745139  4070  4070 F libc    : "/data/data/com.tencent.android.qqdownloader/lib/libaurora.so": error: only position independent executables (PIE) are supported.
+05-04 19:05:28.745360  4070  4070 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 4070 (libaurora.so)
+05-04 19:05:28.830841  4073  4073 I AEE/AED : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+05-04 19:05:28.840324  4073  4073 I AEE/AED : Build fingerprint: 'Itel/P51/P51:7.0/NRD90M/P51-I802-7.0-V025-170504:user/release-keys'
+05-04 19:05:28.840406  4073  4073 I AEE/AED : Revision: '0'
+05-04 19:05:28.840464  4073  4073 I AEE/AED : ABI: 'arm'
+05-04 19:05:28.840797  4073  4073 I AEE/AED : pid: 4070, tid: 4070, name: libaurora.so  >>> /data/data/com.tencent.android.qqdownloader/lib/libaurora.so <<<
+05-04 19:05:28.840956  4073  4073 I AEE/AED : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+05-04 19:05:28.841065  4073  4073 I AEE/AED :     r0 00000000  r1 00000fe6  r2 00000006  r3 00000008
+05-04 19:05:28.841130  4073  4073 I AEE/AED :     r4 a7d2758c  r5 00000006  r6 a7d27534  r7 0000010c
+05-04 19:05:28.841185  4073  4073 I AEE/AED :     r8 a7cb6010  r9 00000000  sl 00000000  fp bec8fa14
+05-04 19:05:28.841240  4073  4073 I AEE/AED :     ip 00000000  sp bec8e770  lr a7d07dff  pc a7d08844  cpsr 200f0010
+05-04 19:05:28.861468  4073  4073 I AEE/AED : 
+05-04 19:05:28.861468  4073  4073 I AEE/AED : backtrace:
+05-04 19:05:28.861611  4073  4073 I AEE/AED :     #00 pc 00045844  /system/bin/linker (__dl_tgkill+12)
+05-04 19:05:28.861719  4073  4073 I AEE/AED :     #01 pc 00044dfb  /system/bin/linker (__dl_pthread_kill+34)
+05-04 19:05:28.861811  4073  4073 I AEE/AED :     #02 pc 0003d17f  /system/bin/linker (__dl_raise+10)
+05-04 19:05:28.861893  4073  4073 I AEE/AED :     #03 pc 0003bc2b  /system/bin/linker (__dl___libc_android_abort+34)
+05-04 19:05:28.861990  4073  4073 I AEE/AED :     #04 pc 0003aa88  /system/bin/linker (__dl_abort+4)
+05-04 19:05:28.862085  4073  4073 I AEE/AED :     #05 pc 0003cc7b  /system/bin/linker (__dl___libc_fatal+22)
+05-04 19:05:28.862189  4073  4073 I AEE/AED :     #06 pc 000093bb  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+2250)
+05-04 19:05:28.862296  4073  4073 I AEE/AED :     #07 pc 00008a5b  /system/bin/linker (__dl___linker_init+358)
+05-04 19:05:28.862389  4073  4073 I AEE/AED :     #08 pc 00002770  /system/bin/linker (_start+4)
+05-04 19:05:51.696009  5370  5370 F libc    : "/data/data/com.tencent.android.qqdownloader/lib/libaurora.so": error: only position independent executables (PIE) are supported.
+05-04 19:05:51.696213  5370  5370 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 5370 (libaurora.so)
+05-04 19:05:51.782395  5372  5372 I AEE/AED : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+05-04 19:05:51.782795  5372  5372 I AEE/AED : Build fingerprint: 'Itel/P51/P51:7.0/NRD90M/P51-I802-7.0-V025-170504:user/release-keys'
+05-04 19:05:51.782920  5372  5372 I AEE/AED : Revision: '0'
+05-04 19:05:51.782967  5372  5372 I AEE/AED : ABI: 'arm'
+05-04 19:05:51.783266  5372  5372 I AEE/AED : pid: 5370, tid: 5370, name: libaurora.so  >>> /data/data/com.tencent.android.qqdownloader/lib/libaurora.so <<<
+05-04 19:05:51.783431  5372  5372 I AEE/AED : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+05-04 19:05:51.783528  5372  5372 I AEE/AED :     r0 00000000  r1 000014fa  r2 00000006  r3 00000008
+05-04 19:05:51.783583  5372  5372 I AEE/AED :     r4 a7f5458c  r5 00000006  r6 a7f54534  r7 0000010c
+05-04 19:05:51.783636  5372  5372 I AEE/AED :     r8 a7ee3010  r9 00000000  sl 00000000  fp be820a14
+05-04 19:05:51.783686  5372  5372 I AEE/AED :     ip 00000000  sp be81f770  lr a7f34dff  pc a7f35844  cpsr 200f0010
+05-04 19:05:51.882215  5372  5372 I AEE/AED : 
+05-04 19:05:51.882215  5372  5372 I AEE/AED : backtrace:
+05-04 19:05:51.882354  5372  5372 I AEE/AED :     #00 pc 00045844  /system/bin/linker (__dl_tgkill+12)
+05-04 19:05:51.882442  5372  5372 I AEE/AED :     #01 pc 00044dfb  /system/bin/linker (__dl_pthread_kill+34)
+05-04 19:05:51.882542  5372  5372 I AEE/AED :     #02 pc 0003d17f  /system/bin/linker (__dl_raise+10)
+05-04 19:05:51.882627  5372  5372 I AEE/AED :     #03 pc 0003bc2b  /system/bin/linker (__dl___libc_android_abort+34)
+05-04 19:05:51.882712  5372  5372 I AEE/AED :     #04 pc 0003aa88  /system/bin/linker (__dl_abort+4)
+05-04 19:05:51.882796  5372  5372 I AEE/AED :     #05 pc 0003cc7b  /system/bin/linker (__dl___libc_fatal+22)
+05-04 19:05:51.882875  5372  5372 I AEE/AED :     #06 pc 000093bb  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+2250)
+05-04 19:05:51.882951  5372  5372 I AEE/AED :     #07 pc 00008a5b  /system/bin/linker (__dl___linker_init+358)
+05-04 19:05:51.883024  5372  5372 I AEE/AED :     #08 pc 00002770  /system/bin/linker (_start+4)
+05-04 19:05:59.600175  5833  5833 F libc    : "/data/data/com.tencent.android.qqdownloader/lib/libaurora.so": error: only position independent executables (PIE) are supported.
+05-04 19:05:59.600461  5833  5833 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 5833 (libaurora.so)
+05-04 19:05:59.949659  5837  5837 I AEE/AED : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+05-04 19:05:59.951013  5837  5837 I AEE/AED : Build fingerprint: 'Itel/P51/P51:7.0/NRD90M/P51-I802-7.0-V025-170504:user/release-keys'
+05-04 19:05:59.951126  5837  5837 I AEE/AED : Revision: '0'
+05-04 19:05:59.951202  5837  5837 I AEE/AED : ABI: 'arm'
+05-04 19:05:59.951524  5837  5837 I AEE/AED : pid: 5833, tid: 5833, name: libaurora.so  >>> /data/data/com.tencent.android.qqdownloader/lib/libaurora.so <<<
+05-04 19:05:59.951679  5837  5837 I AEE/AED : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+05-04 19:05:59.951793  5837  5837 I AEE/AED :     r0 00000000  r1 000016c9  r2 00000006  r3 00000008
+05-04 19:05:59.951872  5837  5837 I AEE/AED :     r4 b54c258c  r5 00000006  r6 b54c2534  r7 0000010c
+05-04 19:05:59.951946  5837  5837 I AEE/AED :     r8 b5451010  r9 00000000  sl 00000000  fp bec28a14
+05-04 19:05:59.952023  5837  5837 I AEE/AED :     ip 00000000  sp bec27770  lr b54a2dff  pc b54a3844  cpsr 200f0010
+05-04 19:05:59.981536  5837  5837 I AEE/AED : 
+05-04 19:05:59.981536  5837  5837 I AEE/AED : backtrace:
+05-04 19:05:59.981738  5837  5837 I AEE/AED :     #00 pc 00045844  /system/bin/linker (__dl_tgkill+12)
+05-04 19:05:59.981887  5837  5837 I AEE/AED :     #01 pc 00044dfb  /system/bin/linker (__dl_pthread_kill+34)
+05-04 19:05:59.982025  5837  5837 I AEE/AED :     #02 pc 0003d17f  /system/bin/linker (__dl_raise+10)
+05-04 19:05:59.982146  5837  5837 I AEE/AED :     #03 pc 0003bc2b  /system/bin/linker (__dl___libc_android_abort+34)
+05-04 19:05:59.982266  5837  5837 I AEE/AED :     #04 pc 0003aa88  /system/bin/linker (__dl_abort+4)
+05-04 19:05:59.982386  5837  5837 I AEE/AED :     #05 pc 0003cc7b  /system/bin/linker (__dl___libc_fatal+22)
+05-04 19:05:59.982508  5837  5837 I AEE/AED :     #06 pc 000093bb  /system/bin/linker (__dl__ZL29__linker_init_post_relocationR19KernelArgumentBlockj+2250)
+05-04 19:05:59.982633  5837  5837 I AEE/AED :     #07 pc 00008a5b  /system/bin/linker (__dl___linker_init+358)
+05-04 19:05:59.982742  5837  5837 I AEE/AED :     #08 pc 00002770  /system/bin/linker (_start+4)
